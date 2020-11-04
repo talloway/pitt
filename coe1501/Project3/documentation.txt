@@ -1,0 +1,37 @@
+**** Avery Peiffer - Project 3 Documentation ****
+
+Overview:
+  This project requires several operations to be done in log(n) time. Additionally, some operations are mutually exclusive to others when performed
+on a single data structure. For example, retrieving the lowest rent and highest square footage cannot both be done on the exact same data structure in
+log(n) time. As such, my overall approach for this project was to build a large data structure that is specifically catered to the specific operations
+that it must perform. There is one data structure that actually carries out most of the operations, and two additional data structures that help
+organize information into the format required for this project.
+
+The Data Structures:
+  The lowest level data structure is AptQueue.java. This contains an array-backed priority queue of apartments sorted by either rent or square footage,
+depending on an input parameter passed into the queue's constructor, labeled as orderingType. This input parameter means that the queue can either be a min
+or a max PQ. The queue also uses a hash map to maintain an indirection table; this ensures that add, update and removal operations are done in O(1) time. The
+queue structure uses a heapify method whenever an apartment is added, updated, or removed to maintain the heap property of the PQ. This heapify method will
+traverse, at most, the height of the heap, or log(n), where n is the size of the array.
+  Next, we have AptSet.java. This data structure represents the apartments that are available for an entire city. As such, it contains two AptQueues sorted
+by rent and square footage, respectively, which will contain the same set of apartments.. Since I have chosen to have separate priority queues for the rent
+and square footage, the AptSet is necessary to ensure that all operations are performed in lockstep between the two. For example, if the user were to update
+the rent of an apartment, and that apartment happened to be the maximum square-footage apartment for that city, the updated rent would need to be displayed
+when the highest square footage option is selected.
+  The largest data structure is the AptCluster. An AptCluster contains several data members that hold the entire project together. It contains a HashMap
+that maps each city to that city's AptSet. This allows for fast execution of all of the operations that specify a city, such as add/update/remove, and
+retrieving the lowest rent/highest square footage by city. The cluster also contains two "overall" queues, one each for rent and square footage. These
+queues contain every apartment across all cities, meaning that the "overall" operations - getting the lowest rent and highest square footage out of
+all apartments - can be performed with ease. The AptCluster also contains a HashMap that takes a combined string consisting of the street address,
+apartment number, and zip code and maps it to that apartment's city. This HashMap is specifically relevant for the update and removal operations, as
+the user is only required to enter a street address, apartment number, and zip code. These operations can be done in log(n) time because of this HashMap.
+
+Runtime and Memory Requirements:
+  The use of hash tables and heaps throughout the data structures mean that all of the operations operate with O(log n) or less time complexity. The only
+operation that itself has a time complexity greater than O(log n) is the array upsizing that occurs in an AptQueue. However, since this upsizing method
+doubles the size of the array, requiring progressively less operations, this method has an amortized time complexity of O(1).
+  Because I created several data structures to ensure that the runtime of each operation is O(log n) or less, there has to be an increase in memory usage.
+Before any apartments are even added to the AptCluster, there are two HashMaps and two PQs created. With each new city added to the cluster, an entirely
+new AptSet is created, which will consist of two more PQs and two more indirection tables. This means that, as the number of cities increases, the memory
+requirement increases linearly. It could be the case that, since this is supposed to be a program for an individual to keep track of apartments, there are
+no practical consequences faced despite this asympotic level of memory usage. However, the same could also be said for runtime.

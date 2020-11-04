@@ -1,0 +1,187 @@
+results.txt
+Avery Peiffer
+aep65
+
+*** ALL SIZES IN KB ***
+
+all.tar
+Original size: 2960
+After LZW.java: 1804
+  Ratio: 1.641
+After MyLZW.java, "n": 1751
+  Ratio: 1.690
+After MyLZW.java, "r": 1151
+  Ratio: 2.572
+After MyLZW.java, "m": 3892
+  Ratio: 0.761
+After WinZIP: 907
+  Ratio: 3.264
+
+assig2.doc
+Original size: 85
+After LZW.java: 73
+  Ratio: 1.164
+After MyLZW.java, "n": 40
+  Ratio: 2.125
+After MyLZW.java, "r": 40
+  Ratio: 2.125
+After MyLZW.java, "m": 40
+  Ratio: 2.125
+After WinZIP: 21.4
+  Ratio: 3.972
+
+bmps.tar
+Original size: 1080
+After LZW.java: 903
+  Ratio: 1.196
+After MyLZW.java, "n": 80
+  Ratio: 13.500
+After MyLZW.java, "r": 80
+  Ratio: 13.500
+After MyLZW.java, "m": 77
+  Ratio: 14.026
+After WinZIP: 55.3
+  Ratio: 19.530
+
+code.txt
+Original size: 71
+After LZW.java: 30
+  Ratio: 2.367
+After MyLZW.java, "n": 24
+  Ratio: 2.958
+After MyLZW.java, "r": 24
+  Ratio: 2.958
+After MyLZW.java, "m": 24
+  Ratio: 2.958
+After WinZIP: 13.9
+  Ratio: 5.108
+
+code2.txt
+Original size: 57
+After LZW.java: 24
+  Ratio: 2.375
+After MyLZW.java, "n": 21
+  Ratio: 2.714
+After MyLZW.java, "r": 21
+  Ratio: 2.714
+After MyLZW.java, "m": 21
+  Ratio: 2.714
+After WinZIP: 12.4
+  Ratio: 4.597
+
+edit.exe
+Original size: 231
+After LZW.java: 245
+  Ratio: 0.943
+After MyLZW.java, "n": 153
+  Ratio: 1.510
+After MyLZW.java, "r": 149
+  Ratio: 1.550
+After MyLZW.java, "m": 153
+  Ratio: 1.510
+After WinZIP: 117
+  Ratio: 1.974
+
+frosty.jpg
+Original size: 124
+After LZW.java: 173
+  Ratio: 0.717
+After MyLZW.java, "n": 160
+  Ratio: 0.775
+After MyLZW.java, "r": 168
+  Ratio: 0.738
+After MyLZW.java, "m": 160
+  Ratio: 0.775
+After WinZIP: 123
+  Ratio: 1.008
+
+gone_fishing.bmp
+Original size: 17
+After LZW.java: 9
+  Ratio: 1.888
+After MyLZW.java, "n": 9
+  Ratio: 1.888
+After MyLZW.java, "r": 9
+  Ratio: 1.888
+After MyLZW.java, "m": 9
+  Ratio: 1.888
+After WinZIP: 7.97
+  Ratio: 2.133
+
+large.txt
+Original size: 1193
+After LZW.java: 591
+  Ratio: 2.019
+After MyLZW.java, "n": 491
+  Ratio: 2.430
+After MyLZW.java, "r": 515
+  Ratio: 2.317
+After MyLZW.java, "m": 491
+  Ratio: 2.430
+After WinZIP: 462
+  Ratio: 2.582
+
+Lego-big.gif
+Original size: 92
+After LZW.java: 126
+  Ratio: 0.730
+After MyLZW.java, "n": 120
+  Ratio: 0.767
+After MyLZW.java, "r": 120
+  Ratio: 0.767
+After MyLZW.java, "m": 120
+  Ratio: 0.767
+After WinZIP: 90.2
+  Ratio: 1.020
+
+medium.txt
+Original size: 25
+After LZW.java: 13
+  Ratio: 1.923
+After MyLZW.java, "n": 13
+  Ratio: 1.923
+After MyLZW.java, "r": 13
+  Ratio: 1.923
+After MyLZW.java, "m": 13
+  Ratio: 1.923
+After WinZIP: 10
+  Ratio: 2.500
+
+texts.tar
+Original size: 1350
+After LZW.java: 988
+  Ratio: 1.366
+After MyLZW.java, "n": 584
+  Ratio: 2.312
+After MyLZW.java, "r": 577
+  Ratio: 2.340
+After MyLZW.java, "m": 559
+  Ratio: 2.415
+After WinZIP: 499
+  Ratio: 2.705
+
+wacky.bmp
+Original size: 901
+After LZW.java: 4
+  Ratio: 225.25
+After MyLZW.java, "n": 4
+  Ratio: 225.25
+After MyLZW.java, "r": 4
+  Ratio: 225.25
+After MyLZW.java, "m": 4
+  Ratio: 225.25
+After WinZIP: 2.92
+  Ratio: 308.562
+
+winnt256.bmp
+Original size: 154
+After LZW.java: 155
+  Ratio: 0.994
+After MyLZW.java, "n": 62
+  Ratio: 2.484
+After MyLZW.java, "r": 62
+  Ratio: 2.484
+After MyLZW.java, "m": 62
+  Ratio: 2.484
+After WinZIP: 43.8
+  Ratio: 3.516

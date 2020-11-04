@@ -1,0 +1,45 @@
+========================================
+CS/COE 1501 Assignment Information Sheet
+----------------------------------------
+
+You must submit an information sheet with every assignment.  Also be sure
+to submit all materials following the procedures described on the
+submission procedures page.
+
+Name: Avery Peiffer
+
+Lecture section: T/Th 2:30 - 3:45
+
+Recitation day and time: W 9:00 - 9:50
+
+Assignment #: 3
+
+Program due date: 10/29
+
+Handed in date: 10/29
+
+Source code file name(s):
+  AptTracker.java
+  AptCluster.java
+  AptSet.java
+  AptQueue.java
+  Apartment.java
+
+
+Other file name(s) (if relevant):
+  documentation.txt
+
+Does your program run without error?: Yes
+
+If not, what is/are the error(s) and which parts of your program run
+correctly?:
+
+
+
+
+
+
+
+Additional comments to the grader:
+  You might need to compile each file individually. I'm not exactly sure why it's been happening, but throughout the project I've found that not every
+  file compiles when I do "javac AptTracker.java". I apologize for the inconvenience that this error might cause.

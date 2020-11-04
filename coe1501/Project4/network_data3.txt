@@ -1,0 +1,7 @@
+4
+0 1 copper 100 100
+0 2 copper 100 100
+0 3 copper 100 100
+1 2 copper 100 100
+1 3 copper 100 100
+2 3 copper 100 100

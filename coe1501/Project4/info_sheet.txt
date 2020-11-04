@@ -1,0 +1,50 @@
+========================================
+CS/COE 1501 Assignment Information Sheet
+----------------------------------------
+
+You must submit an information sheet with every assignment.  Also be sure
+to submit all materials following the procedures described on the
+submission procedures page.
+
+Name: Avery Peiffer
+
+Lecture section: T/Th 2:30 - 3:45
+
+Recitation day and time: W 9:00 - 9:50
+
+Assignment #: 4
+
+Program due date: 11/12
+
+Handed in date: 11/12
+
+Source code file name(s):
+  NetworkAnalysis.java
+  EdgePQ.java
+  Node.java
+  EdgeLinkedList.java
+
+
+Other file name(s) (if relevant):
+
+
+
+
+
+
+
+Does your program run without error?: Yes
+
+If not, what is/are the error(s) and which parts of your program run correctly?:
+
+
+
+
+
+Additional comments to the grader:
+  My driver program pauses for 1.5 seconds after it prints out the result of an operation. I did this to make the result easier to see before the program prints
+  out the entire menu again.
+  Biconnected.java is not part of my final submission. I had it for a previous submission, but decided that I did not want to use it. I locked it so that it isn't
+  used.
+  You may need to compile all the files separately. I've had issues where compiling my NetworkAnalysis.java file doesn't cause all of the other files to be
+  compiled as well.

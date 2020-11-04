@@ -1,0 +1,2 @@
+aep65
+I only made changes to the code in the 'manualloser' branch, where I added a few lines that consider the number of voters in whether or not to manually push the loser forward as described in the comments. 

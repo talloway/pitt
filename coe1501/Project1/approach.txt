@@ -1,0 +1,4 @@
+My approach to tracking the user's previously entered words was to add each of the user's words into a separate
+DLB Trie (userHistoryTrie). Then, when a new character is entered, the program searches through the history trie
+and retrieves all words that start with the current string that is being formed. It then orders these words by frequency
+using two ArrayLists and a HashMap.
