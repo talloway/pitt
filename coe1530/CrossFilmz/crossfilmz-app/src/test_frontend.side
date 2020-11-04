@@ -1,0 +1,450 @@
+{
+  "id": "2df4d2ac-684b-4349-b48e-8beafa1f799e",
+  "version": "2.0",
+  "name": "Front_End",
+  "url": "http://localhost:3000",
+  "tests": [{
+    "id": "199b8245-0d89-4169-b675-d6e6f66d6a42",
+    "name": "CrossFilmz:TopText",
+    "commands": [{
+      "id": "62d491d5-4c65-4da2-93ca-a631d37f01a6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60cda7f0-2fa2-453c-9f3a-785489f948af",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67b0ea40-5256-439c-bb09-e447a3478770",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/header/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Rendering movies from : Netflix')]", "xpath:innerText"]
+      ],
+      "value": "Rendering movies from :"
+    }, {
+      "id": "3d80d53d-85d4-4531-b08e-f0cc0d26305f",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.MuiPaper-root:nth-child(1) .MuiCardMedia-root",
+      "targets": [
+        ["css=.MuiPaper-root:nth-child(1) .MuiCardMedia-root", "css:finder"],
+        ["xpath=//img[@alt='Contemplative Reptile']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/main/div[2]/div/button/img", "xpath:idRelative"],
+        ["xpath=//button/img", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "1f45c6ef-d681-46da-aaa4-bb74e9d05756",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiList-root:nth-child(4) > .MuiButtonBase-root:nth-child(1) > .MuiListItemIcon-root",
+      "targets": [
+        ["css=.MuiList-root:nth-child(4) > .MuiButtonBase-root:nth-child(1) > .MuiListItemIcon-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/ul/div/div", "xpath:idRelative"],
+        ["xpath=//ul/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7feb44ae-bb84-4c96-8f50-95786fb42ec4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/header/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Rendering movies from : Netflix')]", "xpath:innerText"]
+      ],
+      "value": "Rendering movies from : Netflix"
+    }, {
+      "id": "a485d217-f581-4289-a167-832dedadd8ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiList-root:nth-child(4) > .MuiButtonBase-root:nth-child(2) .MuiListItemIcon-root",
+      "targets": [
+        ["css=.MuiList-root:nth-child(4) > .MuiButtonBase-root:nth-child(2) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/ul/div[2]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Amazon')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "efa07747-624f-4e1e-b175-3471712a1fcd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/header/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Rendering movies from : Netflix')]", "xpath:innerText"]
+      ],
+      "value": "Rendering movies from : Amazon"
+    }, {
+      "id": "874d57db-108a-4cf8-88e5-e3c568159107",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiList-root:nth-child(4) > .MuiButtonBase-root:nth-child(3) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiList-root:nth-child(4) > .MuiButtonBase-root:nth-child(3) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/ul/div[3]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Hulu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddaab1e1-99e3-44b8-9adb-e68d1da789ac",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=.MuiList-root:nth-child(4) > .MuiButtonBase-root:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/ul/div[2]", "xpath:idRelative"],
+        ["xpath=//ul/div[2]", "xpath:position"]
+      ],
+      "value": "Rendering movies from : Hulu"
+    }, {
+      "id": "e0e32f26-d9f2-40d6-a4d1-a94824247380",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiList-root:nth-child(4) > .MuiButtonBase-root:nth-child(4) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiList-root:nth-child(4) > .MuiButtonBase-root:nth-child(4) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/ul/div[4]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Disney')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd8a1ab4-2b95-4e82-90ad-bd561c210efe",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/header/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Rendering movies from : Netflix')]", "xpath:innerText"]
+      ],
+      "value": "Rendering movies from : Disney"
+    }, {
+      "id": "dddf75e5-bc7a-415e-9768-b597d1083f74",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiToolbar-root .MuiTypography-root",
+      "targets": [
+        ["css=.MuiToolbar-root .MuiTypography-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/header/div/div/div[2]/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6eacc3b-a023-4a29-b15b-618bc3c1d828",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/header/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Rendering movies from : Netflix')]", "xpath:innerText"]
+      ],
+      "value": "Rendering movies from : Home"
+    }, {
+      "id": "ce3cccb9-c9b8-4c68-b81d-a8b3ffecbf53",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiList-root:nth-child(6) > .MuiButtonBase-root:nth-child(1) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiList-root:nth-child(6) > .MuiButtonBase-root:nth-child(1) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/ul[2]/div/div[2]/span", "xpath:idRelative"],
+        ["xpath=//ul[2]/div/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'All Recommendations')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c924dbd-bb83-49b3-98fa-b5fb3881cf45",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/header/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Rendering movies from : Netflix')]", "xpath:innerText"]
+      ],
+      "value": "Rendering movies from : All Recommendations"
+    }, {
+      "id": "bf496a90-f84f-4732-a439-735898182454",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiList-root:nth-child(6) > .MuiButtonBase-root:nth-child(2) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiList-root:nth-child(6) > .MuiButtonBase-root:nth-child(2) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/ul[2]/div[2]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//ul[2]/div[2]/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Suggest Netflix')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98d87b31-c854-4b6e-b850-0b05ae66a398",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/header/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Rendering movies from : Netflix')]", "xpath:innerText"]
+      ],
+      "value": "Rendering movies from : Suggest Netflix"
+    }, {
+      "id": "4675e792-bfed-4ccf-8131-441aa5b1b6ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiList-root:nth-child(6) > .MuiButtonBase-root:nth-child(3) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiList-root:nth-child(6) > .MuiButtonBase-root:nth-child(3) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/ul[2]/div[3]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//ul[2]/div[3]/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Suggest Amazon')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "314ba304-f064-4dcd-9d07-f44fcd82593b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/header/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Rendering movies from : Netflix')]", "xpath:innerText"]
+      ],
+      "value": "Rendering movies from : Suggest Amazon"
+    }, {
+      "id": "f9282152-2104-45af-814e-524d5b56f135",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiList-root:nth-child(6) > .MuiButtonBase-root:nth-child(4) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiList-root:nth-child(6) > .MuiButtonBase-root:nth-child(4) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/ul[2]/div[4]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//ul[2]/div[4]/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Suggest Hulu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9df906ae-7388-4c7d-b9c3-114c996fee7f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/header/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Rendering movies from : Netflix')]", "xpath:innerText"]
+      ],
+      "value": "Rendering movies from : Suggest Hulu"
+    }, {
+      "id": "e39ad8f0-4ac4-4aef-b527-67036acdea83",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(5) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(5) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/ul[2]/div[5]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Suggest Disney+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b17e5ff-78a2-4820-ba8c-cb00084d899d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/header/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Rendering movies from : Netflix')]", "xpath:innerText"]
+      ],
+      "value": "Rendering movies from : Suggest Disney+"
+    }]
+  }, {
+    "id": "853128e9-6167-4147-8728-0c53b85ead3b",
+    "name": "Test_render",
+    "commands": [{
+      "id": "610d109c-9949-4c10-8fc2-44f276b420e5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68abd2fe-3c98-48a8-a4ae-ba271b1c85a1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09d941e4-d385-49aa-8197-6a7362ec9904",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.MuiPaper-root:nth-child(76) .MuiCardMedia-root",
+      "targets": [
+        ["css=.MuiPaper-root:nth-child(76) .MuiCardMedia-root", "css:finder"],
+        ["xpath=(//img[@alt='Contemplative Reptile'])[76]", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/main/div[2]/div[76]/button/img", "xpath:idRelative"],
+        ["xpath=//div[76]/button/img", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "9767f8bc-d55d-464a-b705-82b857cc3e49",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiList-root:nth-child(4) > .MuiButtonBase-root:nth-child(1)",
+      "targets": [
+        ["css=.MuiList-root:nth-child(4) > .MuiButtonBase-root:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/ul/div", "xpath:idRelative"],
+        ["xpath=//ul/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa861b65-5afb-4249-be46-80ae653c407e",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.MuiPaper-root:nth-child(18) .MuiCardMedia-root",
+      "targets": [
+        ["css=.MuiPaper-root:nth-child(18) .MuiCardMedia-root", "css:finder"],
+        ["xpath=(//img[@alt='Contemplative Reptile'])[18]", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/main/div[2]/div[18]/button/img", "xpath:idRelative"],
+        ["xpath=//div[18]/button/img", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "cb58aba7-de5e-436f-8d9d-0f8d6d96451e",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "css=.MuiPaper-root:nth-child(19) .MuiCardMedia-root",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "c21a81d1-5e3a-4adf-ad94-a870ed9c0446",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiList-root:nth-child(4) > .MuiButtonBase-root:nth-child(2) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiList-root:nth-child(4) > .MuiButtonBase-root:nth-child(2) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/ul/div[2]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Amazon')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "65103b74-ee8d-4639-8cbd-f2135fd5a63a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.MuiPaper-root:nth-child(67) .MuiCardMedia-root",
+      "targets": [
+        ["css=.MuiPaper-root:nth-child(67) .MuiCardMedia-root", "css:finder"],
+        ["xpath=(//img[@alt='Contemplative Reptile'])[67]", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/main/div[2]/div[67]/button/img", "xpath:idRelative"],
+        ["xpath=//div[67]/button/img", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "1983a356-8e44-4cf8-b845-926214414f0a",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "css=.MuiPaper-root:nth-child(68) .MuiCardMedia-root",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "79b09c91-54da-436a-8e5b-2f9744ed4833",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiList-root:nth-child(4) > .MuiButtonBase-root:nth-child(3) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiList-root:nth-child(4) > .MuiButtonBase-root:nth-child(3) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/ul/div[3]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Hulu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2087bd72-c9bb-4948-ae49-384118287490",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.MuiPaper-root:nth-child(24) .MuiCardMedia-root",
+      "targets": [
+        ["css=.MuiPaper-root:nth-child(24) .MuiCardMedia-root", "css:finder"],
+        ["xpath=(//img[@alt='Contemplative Reptile'])[24]", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/main/div[2]/div[24]/button/img", "xpath:idRelative"],
+        ["xpath=//div[24]/button/img", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "9bfc2d27-c140-4ff9-9012-777a80994b03",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "css=.MuiPaper-root:nth-child(25) .MuiCardMedia-root",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "bf90d73f-156a-48a0-b4d4-149657fa3f8d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiList-root:nth-child(4) > .MuiButtonBase-root:nth-child(4) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiList-root:nth-child(4) > .MuiButtonBase-root:nth-child(4) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/ul/div[4]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Disney')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0203848-2e29-4eb1-9c57-ba469fde1ccf",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.MuiPaper-root:nth-child(23) .MuiCardMedia-root",
+      "targets": [
+        ["css=.MuiPaper-root:nth-child(23) .MuiCardMedia-root", "css:finder"],
+        ["xpath=(//img[@alt='Contemplative Reptile'])[23]", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/main/div[2]/div[23]/button/img", "xpath:idRelative"],
+        ["xpath=//div[23]/button/img", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "228393fb-82d6-43ad-b4f3-4a61676b3a5b",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "css=.MuiPaper-root:nth-child(24) .MuiCardMedia-root",
+      "targets": [],
+      "value": "10000"
+    }]
+  }],
+  "suites": [{
+    "id": "ac3bc312-61ef-426c-a47d-5553ab0c964b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["199b8245-0d89-4169-b675-d6e6f66d6a42"]
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}
