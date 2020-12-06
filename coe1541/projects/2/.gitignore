@@ -1,0 +1,17 @@
+# Linker files
+*.o
+
+# Output, diff, and other temp files
+*.diff
+*.out
+*.err
+*.swp
+
+# Binary Files
+trace_generator
+trace_reader
+five_stage
+
+# IDE Files
+.kdev4/*
+*.kdev4

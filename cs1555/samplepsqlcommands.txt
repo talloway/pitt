@@ -1,0 +1,2 @@
+\o 'C:/Users/Avery Peiffer/Desktop/CS2055/assignments/assignment2/aep65-output.txt' to capture output
+\i 'C:/Users/Avery Peiffer/Desktop/CS2055/assignments/assignment2/aep65-query.sql' to execute script

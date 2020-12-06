@@ -1,0 +1,36 @@
+# Q1a: Find all the actors that starred in "Cloud Atlas"
+
+# Q1b: Find all the actors' names that starred in "Cloud Atlas"
+
+# Q2: Count how many actors starred in "Cloud Atlas"
+
+# Q3a: Find the names of child actors (i.e., have released - born < 18)
+
+# Q3b: Show the names of child actors (i.e., have released - born < 18), 
+#      the movie title, and the age they were in. Order results by decreasing age.
+
+# Q4: Show who (name) has reviewed which movie (title)
+
+# Q5a: Show how many reviews each reviewer did.
+
+# Q5b: Show how many reviews each reviewer did, order by number of reviews (highest first)
+
+# Q6a: Find the earliest release date out of all the movies in our database
+
+# Q6b: Find the latest release date out of all the movies in our database
+
+# Q7: Find the titles of all movies that were released in 2012
+
+# Q8: Find the title(s) of all movies that were released in the earliest year in the database.
+
+# Q9: Find directors who directed movies in their 40s, and show their name, 
+#     age and the movie title for the movie they directed.
+
+# Q10: Find the number of movies an actor did (show actor's name and count of movies). Order by number of movies.
+
+# Q11: Debug Q10, by picking an actor, say Tom Hanks and list which movies they acted in.
+
+# Q12: Show the average age of directors for all movies at the time of the movie being made.
+
+# Q13: Find all the co-actors of Tom Cruise along with many times they co-acted in a movie together.
+
