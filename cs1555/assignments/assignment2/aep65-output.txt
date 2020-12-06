@@ -1,0 +1,621 @@
+ pplsoft |   fname   |  lname  | pittid |    expertise    | office_phone | years_of_experience | supervisor 
+---------+-----------+---------+--------+-----------------+--------------+---------------------+------------
+ 1110001 | Bob       | Hoffman | bh1    | Unix systems    | 412-624-8404 |                  15 |           
+ 1110002 | Samantha  | Cortes  | sj1    | Hardware        | 412-624-8831 |                  14 |    1110001
+ 1110003 | Rich      | Health  | rh1    | Windows Systems | 412-624-8834 |                   9 |    1110001
+ 1110004 | Christian | Mason   | cm1    | Web Technology  | 412-624-9181 |                   5 |    1110001
+ 1110005 | Terry     | Wood    | tw1    | Hardware        | 412-624-9181 |                  16 |    1110001
+ 1110006 | Stephanie | DeRosa  | sd1    | Mac Systems     | 412-624-9181 |                   3 |    1110001
+(6 rows)
+
+ pplsoft |  fname  |  lname   | pittid | office_phone 
+---------+---------+----------+--------+--------------
+ 5550001 | Shenoda | Guirguis | shg18  | 412-624-8443
+ 5550002 | Lory    | Almoakar | la1    | 412-624-8443
+ 5550003 | Thao    | Pham     | tp1    | 412-624-8850
+ 5550004 | Michel  | Hanna    | mh1    | 412-624-8402
+(4 rows)
+
+ category_id |       category        |                     description                      
+-------------+-----------------------+------------------------------------------------------
+           1 | Printing Problem      | problems have to do with printers and printing
+           2 | Network Problem       | problems have to do with the network and/or internet
+           3 | Windows OS problem    | problems have to do with Windows OS maintenance
+           4 | Unix/Linux OS problem | problems have to do with Unix/Linux OS maintenance
+           5 | Hardware Problem      | HW maintenance issues
+           6 | Software Problem      | SW maintenance issues
+           7 | Server Problem        | Any problem has to do with the dept. servers
+           8 | Software install      | Requests to install additional SW
+           9 | Web Problem           | Any problem has to do with the dept. web sites
+          10 | Windows Help          |  Questions about Windows (hotline support
+          11 | Unix/Linux Help       | Questions about Unix/Linux (hotline support)
+          12 | SW Help               | Questions about installed SW (hotline support)
+          13 | AFS problem           | Prolbmes related to the AFS system.
+(13 rows)
+
+     machine_name     |   ip_address    | network_port |    mac_address    | location_id 
+----------------------+-----------------+--------------+-------------------+-------------
+ acta.cs.pitt.edu     | 102.168.222.226 | sq6-52       | 01:23:45:67:89:ab |           1
+ kaly.cs.pitt.edu     | 102.168.222.227 | sq5-14       | 01:23:45:67:89:ac |           3
+ elements.cs.pitt.edu | 102.168.222.228 | sq5-23       | 01:23:45:67:89:ad |           5
+ kaso.cs.pitt.edu     | 102.168.222.229 | sq6-22       | 01:23:45:67:89:ae |           2
+ oxgyn.cs.pitt.edu    | 102.168.212.216 | sq5-17       | 01:23:45:67:89:af |           3
+ rodi.cs.pitt.edu     | 102.168.212.217 | sq6-51       | 01:23:45:67:89:ba |           1
+ java lab machine     | 102.168.212.220 | sq6-41       | 01:23:45:67:89:bb |           4
+(7 rows)
+
+ location_id | location  | building |       notes       
+-------------+-----------+----------+-------------------
+           1 | 6th floor | SENSQ    | db research lab
+           2 | 6th floor | SENSQ    | os research lab
+           3 | 5th floor | SENSQ    | arch research lab
+           4 | 6th floor | SENSQ    | java lab
+           5 | 5th floor | SENSQ    | reading room
+(5 rows)
+
+ ticket_number | owner_pplsoft | date_submitted | date_closed | days_worked_on | category_id |     machine_name     |                   description                    
+---------------+---------------+----------------+-------------+----------------+-------------+----------------------+--------------------------------------------------
+        567841 |       5550001 | 2019-12-20     | 2020-01-02  |             14 |           5 | acta.cs.pitt.edu     | The fan is noisy.
+        567842 |       5550002 | 2019-12-20     | 2019-12-22  |              3 |           1 | kaly.cs.pitt.edu     | Can not print any PDF file!
+        567843 |       5550002 | 2019-12-23     |             |                |           6 | elements.cs.pitt.edu | Seems that the server is down?!
+        567844 |       5550001 | 2019-12-28     | 2019-12-31  |              4 |           6 | acta.cs.pitt.edu     | The AFS client crashes all the time!
+        567845 |       5550003 | 2020-01-01     | 2020-01-05  |              5 |           4 | kaso.cs.pitt.edu     | The mouse responds in a weird way.
+        567846 |       5550002 | 2020-01-02     | 2020-01-02  |              1 |           2 | oxgyn.cs.pitt.edu    | can not connect to the oxgyn server!
+        567847 |       5550001 | 2020-01-05     | 2020-01-06  |              2 |           8 | acta.cs.pitt.edu     | I failed to login to the evaluation site.
+        567848 |       5550003 | 2020-01-05     | 2020-01-12  |              8 |           7 | kaso.cs.pitt.edu     | May I have SigmaPlot installed on my machine?
+        567849 |       5550003 | 2020-01-13     |             |                |           5 | kaso.cs.pitt.edu     | Some keys on the keyboard does not function. 
+        567850 |       5550004 | 2020-01-14     |             |                |          10 | rodi.cs.pitt.edu     | The sound card is unrecognized.
+        567851 |       5550001 | 2020-01-14     | 2020-01-23  |             10 |           5 | acta.cs.pitt.edu     | The harddrive got bad sector.
+        567852 |       5550003 | 2020-01-14     | 2020-02-17  |             35 |           3 | kaso.cs.pitt.edu     | Windows crashed!
+        567853 |       5550003 | 2020-01-15     | 2020-01-21  |              7 |          12 | kaso.cs.pitt.edu     | can not reach AFS-home directory from home.
+        567854 |       5550001 | 2020-01-16     | 2020-01-17  |              2 |           6 | acta.cs.pitt.edu     | I have trouble configuring Outlook.
+        567855 |       5550003 | 2020-01-20     |             |                |           3 | kaso.cs.pitt.edu     | Windows crashed!
+        567856 |       5550004 | 2020-01-25     |             |                |           8 | java lab machine     | Can not submit my h/w using the submission site.
+        567857 |       5550001 | 2020-03-29     |             |                |           8 | acta.cs.pitt.edu     | Machine wont boot.
+(17 rows)
+
+ ticket_number | tech_pplsoft | date_assigned |      status       | outcome 
+---------------+--------------+---------------+-------------------+---------
+        567841 |      1110001 | 2019-12-20    | delegated         | 
+        567841 |      1110002 | 2020-01-02    | closed_successful | 
+        567842 |      1110002 | 2019-12-22    | closed_successful | 
+        567843 |      1110001 | 2019-12-23    | assigned          | 
+        567844 |      1110003 | 2019-12-31    | closed_successful | 
+        567845 |      1110003 | 2020-01-05    | closed_successful | 
+        567846 |      1110002 | 2020-01-02    | closed_successful | 
+        567847 |      1110001 | 2020-01-06    | closed_successful | 
+        567848 |      1110003 | 2020-01-05    | delegated         | 
+        567848 |      1110001 | 2020-01-12    | closed_successful | 
+        567849 |      1110003 | 2020-01-13    | in_progress       | 
+        567850 |      1110004 | 2020-01-14    | in_progress       | 
+        567851 |      1110001 | 2020-01-14    | delegated         | 
+        567851 |      1110002 | 2020-01-23    | closed_successful | 
+        567852 |      1110003 | 2020-02-17    | closed_successful | 
+        567853 |      1110003 | 2020-01-15    | delegated         | 
+        567853 |      1110001 | 2020-01-21    | closed_successful | 
+        567854 |      1110001 | 2020-01-17    | closed_successful | 
+        567855 |      1110001 | 2020-01-20    | in_progress       | 
+        567856 |      1110003 | 2020-01-25    | delegated         | 
+        567856 |      1110004 | 2020-01-25    | in_progress       | 
+(21 rows)
+
+    usernames     
+------------------
+ Lory Almoakar
+ Shenoda Guirguis
+(2 rows)
+
+  usernames   
+--------------
+ Michel Hanna
+ Thao Pham
+(2 rows)
+
+      staff       | supervisor  
+------------------+-------------
+ Bob Hoffman      | 
+ Samantha Cortes  | Bob Hoffman
+ Rich Health      | Bob Hoffman
+ Christian Mason  | Bob Hoffman
+ Terry Wood       | Bob Hoffman
+ Stephanie DeRosa | Bob Hoffman
+(6 rows)
+
+  users  
+---------
+ 5550003
+(1 row)
+
+ average_days_worked_on 
+------------------------
+     5.8333333333333333
+(1 row)
+
+   fullname   | num_tickets_submitted 
+--------------+-----------------------
+ Michel Hanna |                     2
+(1 row)
+
+     machine_name     | num_problems 
+----------------------+--------------
+ elements.cs.pitt.edu |            1
+ kaly.cs.pitt.edu     |            1
+ oxgyn.cs.pitt.edu    |            1
+(3 rows)
+
+ date_submitted 
+----------------
+(0 rows)
+
+     category     | num_tickets_submitted 
+------------------+-----------------------
+ Hardware Problem |                     2
+ Software install |                     2
+(2 rows)
+
+DROP VIEW
+CREATE VIEW
+     category     | num_tickets_submitted 
+------------------+-----------------------
+ Hardware Problem |                     2
+ Software install |                     2
+(2 rows)
+
+DROP VIEW
+CREATE VIEW
+DROP VIEW
+CREATE VIEW
+DROP VIEW
+CREATE VIEW
+DROP VIEW
+CREATE VIEW
+DROP VIEW
+CREATE VIEW
+DROP VIEW
+CREATE VIEW
+DROP VIEW
+CREATE VIEW
+ tech_pplsoft | pplsoft2 | total_days_worked_on_closed | total_days_worked_on_in_progress 
+--------------+----------+-----------------------------+----------------------------------
+      1110001 |  1110001 |                           0 |                               11
+      1110002 |          |                           0 |                                 
+      1110003 |  1110003 |                           0 |                               18
+              |  1110004 |                             |                               23
+(4 rows)
+
+DROP VIEW
+CREATE VIEW
+ tech_pplsoft | pplsoft2 | pplsoft3 | total_days_worked_on_closed | total_days_worked_on_in_progress | total_days_worked_on_delegated 
+--------------+----------+----------+-----------------------------+----------------------------------+--------------------------------
+      1110001 |  1110001 |          |                           0 |                               11 |                               
+      1110002 |          |          |                           0 |                                  |                               
+      1110003 |  1110003 |          |                           0 |                               18 |                               
+              |  1110004 |  1110004 |                             |                               23 |                              0
+(4 rows)
+
+    fullname     | total_days_worked 
+-----------------+-------------------
+ Samantha Cortes |                 0
+ Bob Hoffman     |                20
+ Christian Mason |                23
+ Rich Health     |                31
+(4 rows)
+
+ pplsoft |   fname   |  lname  | pittid |    expertise    | office_phone | years_of_experience | supervisor 
+---------+-----------+---------+--------+-----------------+--------------+---------------------+------------
+ 1110001 | Bob       | Hoffman | bh1    | Unix systems    | 412-624-8404 |                  15 |           
+ 1110002 | Samantha  | Cortes  | sj1    | Hardware        | 412-624-8831 |                  14 |    1110001
+ 1110003 | Rich      | Health  | rh1    | Windows Systems | 412-624-8834 |                   9 |    1110001
+ 1110004 | Christian | Mason   | cm1    | Web Technology  | 412-624-9181 |                   5 |    1110001
+ 1110005 | Terry     | Wood    | tw1    | Hardware        | 412-624-9181 |                  16 |    1110001
+ 1110006 | Stephanie | DeRosa  | sd1    | Mac Systems     | 412-624-9181 |                   3 |    1110001
+(6 rows)
+
+ pplsoft |  fname  |  lname   | pittid | office_phone 
+---------+---------+----------+--------+--------------
+ 5550001 | Shenoda | Guirguis | shg18  | 412-624-8443
+ 5550002 | Lory    | Almoakar | la1    | 412-624-8443
+ 5550003 | Thao    | Pham     | tp1    | 412-624-8850
+ 5550004 | Michel  | Hanna    | mh1    | 412-624-8402
+(4 rows)
+
+ category_id |       category        |                     description                      
+-------------+-----------------------+------------------------------------------------------
+           1 | Printing Problem      | problems have to do with printers and printing
+           2 | Network Problem       | problems have to do with the network and/or internet
+           3 | Windows OS problem    | problems have to do with Windows OS maintenance
+           4 | Unix/Linux OS problem | problems have to do with Unix/Linux OS maintenance
+           5 | Hardware Problem      | HW maintenance issues
+           6 | Software Problem      | SW maintenance issues
+           7 | Server Problem        | Any problem has to do with the dept. servers
+           8 | Software install      | Requests to install additional SW
+           9 | Web Problem           | Any problem has to do with the dept. web sites
+          10 | Windows Help          |  Questions about Windows (hotline support
+          11 | Unix/Linux Help       | Questions about Unix/Linux (hotline support)
+          12 | SW Help               | Questions about installed SW (hotline support)
+          13 | AFS problem           | Prolbmes related to the AFS system.
+(13 rows)
+
+     machine_name     |   ip_address    | network_port |    mac_address    | location_id 
+----------------------+-----------------+--------------+-------------------+-------------
+ acta.cs.pitt.edu     | 102.168.222.226 | sq6-52       | 01:23:45:67:89:ab |           1
+ kaly.cs.pitt.edu     | 102.168.222.227 | sq5-14       | 01:23:45:67:89:ac |           3
+ elements.cs.pitt.edu | 102.168.222.228 | sq5-23       | 01:23:45:67:89:ad |           5
+ kaso.cs.pitt.edu     | 102.168.222.229 | sq6-22       | 01:23:45:67:89:ae |           2
+ oxgyn.cs.pitt.edu    | 102.168.212.216 | sq5-17       | 01:23:45:67:89:af |           3
+ rodi.cs.pitt.edu     | 102.168.212.217 | sq6-51       | 01:23:45:67:89:ba |           1
+ java lab machine     | 102.168.212.220 | sq6-41       | 01:23:45:67:89:bb |           4
+(7 rows)
+
+ location_id | location  | building |       notes       
+-------------+-----------+----------+-------------------
+           1 | 6th floor | SENSQ    | db research lab
+           2 | 6th floor | SENSQ    | os research lab
+           3 | 5th floor | SENSQ    | arch research lab
+           4 | 6th floor | SENSQ    | java lab
+           5 | 5th floor | SENSQ    | reading room
+(5 rows)
+
+ ticket_number | owner_pplsoft | date_submitted | date_closed | days_worked_on | category_id |     machine_name     |                   description                    
+---------------+---------------+----------------+-------------+----------------+-------------+----------------------+--------------------------------------------------
+        567841 |       5550001 | 2019-12-20     | 2020-01-02  |             14 |           5 | acta.cs.pitt.edu     | The fan is noisy.
+        567842 |       5550002 | 2019-12-20     | 2019-12-22  |              3 |           1 | kaly.cs.pitt.edu     | Can not print any PDF file!
+        567843 |       5550002 | 2019-12-23     |             |                |           6 | elements.cs.pitt.edu | Seems that the server is down?!
+        567844 |       5550001 | 2019-12-28     | 2019-12-31  |              4 |           6 | acta.cs.pitt.edu     | The AFS client crashes all the time!
+        567845 |       5550003 | 2020-01-01     | 2020-01-05  |              5 |           4 | kaso.cs.pitt.edu     | The mouse responds in a weird way.
+        567846 |       5550002 | 2020-01-02     | 2020-01-02  |              1 |           2 | oxgyn.cs.pitt.edu    | can not connect to the oxgyn server!
+        567847 |       5550001 | 2020-01-05     | 2020-01-06  |              2 |           8 | acta.cs.pitt.edu     | I failed to login to the evaluation site.
+        567848 |       5550003 | 2020-01-05     | 2020-01-12  |              8 |           7 | kaso.cs.pitt.edu     | May I have SigmaPlot installed on my machine?
+        567849 |       5550003 | 2020-01-13     |             |                |           5 | kaso.cs.pitt.edu     | Some keys on the keyboard does not function. 
+        567850 |       5550004 | 2020-01-14     |             |                |          10 | rodi.cs.pitt.edu     | The sound card is unrecognized.
+        567851 |       5550001 | 2020-01-14     | 2020-01-23  |             10 |           5 | acta.cs.pitt.edu     | The harddrive got bad sector.
+        567852 |       5550003 | 2020-01-14     | 2020-02-17  |             35 |           3 | kaso.cs.pitt.edu     | Windows crashed!
+        567853 |       5550003 | 2020-01-15     | 2020-01-21  |              7 |          12 | kaso.cs.pitt.edu     | can not reach AFS-home directory from home.
+        567854 |       5550001 | 2020-01-16     | 2020-01-17  |              2 |           6 | acta.cs.pitt.edu     | I have trouble configuring Outlook.
+        567855 |       5550003 | 2020-01-20     |             |                |           3 | kaso.cs.pitt.edu     | Windows crashed!
+        567856 |       5550004 | 2020-01-25     |             |                |           8 | java lab machine     | Can not submit my h/w using the submission site.
+        567857 |       5550001 | 2020-03-29     |             |                |           8 | acta.cs.pitt.edu     | Machine wont boot.
+(17 rows)
+
+ ticket_number | tech_pplsoft | date_assigned |      status       | outcome 
+---------------+--------------+---------------+-------------------+---------
+        567841 |      1110001 | 2019-12-20    | delegated         | 
+        567841 |      1110002 | 2020-01-02    | closed_successful | 
+        567842 |      1110002 | 2019-12-22    | closed_successful | 
+        567843 |      1110001 | 2019-12-23    | assigned          | 
+        567844 |      1110003 | 2019-12-31    | closed_successful | 
+        567845 |      1110003 | 2020-01-05    | closed_successful | 
+        567846 |      1110002 | 2020-01-02    | closed_successful | 
+        567847 |      1110001 | 2020-01-06    | closed_successful | 
+        567848 |      1110003 | 2020-01-05    | delegated         | 
+        567848 |      1110001 | 2020-01-12    | closed_successful | 
+        567849 |      1110003 | 2020-01-13    | in_progress       | 
+        567850 |      1110004 | 2020-01-14    | in_progress       | 
+        567851 |      1110001 | 2020-01-14    | delegated         | 
+        567851 |      1110002 | 2020-01-23    | closed_successful | 
+        567852 |      1110003 | 2020-02-17    | closed_successful | 
+        567853 |      1110003 | 2020-01-15    | delegated         | 
+        567853 |      1110001 | 2020-01-21    | closed_successful | 
+        567854 |      1110001 | 2020-01-17    | closed_successful | 
+        567855 |      1110001 | 2020-01-20    | in_progress       | 
+        567856 |      1110003 | 2020-01-25    | delegated         | 
+        567856 |      1110004 | 2020-01-25    | in_progress       | 
+(21 rows)
+
+    usernames     
+------------------
+ Lory Almoakar
+ Shenoda Guirguis
+(2 rows)
+
+  usernames   
+--------------
+ Michel Hanna
+ Thao Pham
+(2 rows)
+
+      staff       | supervisor  
+------------------+-------------
+ Bob Hoffman      | 
+ Samantha Cortes  | Bob Hoffman
+ Rich Health      | Bob Hoffman
+ Christian Mason  | Bob Hoffman
+ Terry Wood       | Bob Hoffman
+ Stephanie DeRosa | Bob Hoffman
+(6 rows)
+
+  users  
+---------
+ 5550003
+(1 row)
+
+ average_days_worked_on 
+------------------------
+     5.8333333333333333
+(1 row)
+
+   fullname   | num_tickets_submitted 
+--------------+-----------------------
+ Michel Hanna |                     2
+(1 row)
+
+     machine_name     | num_problems 
+----------------------+--------------
+ elements.cs.pitt.edu |            1
+ kaly.cs.pitt.edu     |            1
+ oxgyn.cs.pitt.edu    |            1
+(3 rows)
+
+ date_submitted 
+----------------
+(0 rows)
+
+     category     | num_tickets_submitted 
+------------------+-----------------------
+ Hardware Problem |                     2
+ Software install |                     2
+(2 rows)
+
+DROP VIEW
+CREATE VIEW
+     category     | num_tickets_submitted 
+------------------+-----------------------
+ Hardware Problem |                     2
+ Software install |                     2
+(2 rows)
+
+DROP VIEW
+CREATE VIEW
+DROP VIEW
+CREATE VIEW
+DROP VIEW
+CREATE VIEW
+DROP VIEW
+CREATE VIEW
+DROP VIEW
+CREATE VIEW
+DROP VIEW
+CREATE VIEW
+DROP VIEW
+CREATE VIEW
+ tech_pplsoft | pplsoft2 | total_days_worked_on_closed | total_days_worked_on_in_progress 
+--------------+----------+-----------------------------+----------------------------------
+      1110001 |  1110001 |                           0 |                               11
+      1110002 |          |                           0 |                                 
+      1110003 |  1110003 |                           0 |                               18
+              |  1110004 |                             |                               23
+(4 rows)
+
+DROP VIEW
+CREATE VIEW
+ tech_pplsoft | pplsoft2 | pplsoft3 | total_days_worked_on_closed | total_days_worked_on_in_progress | total_days_worked_on_delegated 
+--------------+----------+----------+-----------------------------+----------------------------------+--------------------------------
+      1110001 |  1110001 |          |                           0 |                               11 |                               
+      1110002 |          |          |                           0 |                                  |                               
+      1110003 |  1110003 |          |                           0 |                               18 |                               
+              |  1110004 |  1110004 |                             |                               23 |                              0
+(4 rows)
+
+DROP TABLE
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+    fullname     | total_days_worked 
+-----------------+-------------------
+ Samantha Cortes |                 0
+ Bob Hoffman     |                20
+ Christian Mason |                23
+ Rich Health     |                31
+(4 rows)
+
+ pplsoft |   fname   |  lname  | pittid |    expertise    | office_phone | years_of_experience | supervisor 
+---------+-----------+---------+--------+-----------------+--------------+---------------------+------------
+ 1110001 | Bob       | Hoffman | bh1    | Unix systems    | 412-624-8404 |                  15 |           
+ 1110002 | Samantha  | Cortes  | sj1    | Hardware        | 412-624-8831 |                  14 |    1110001
+ 1110003 | Rich      | Health  | rh1    | Windows Systems | 412-624-8834 |                   9 |    1110001
+ 1110004 | Christian | Mason   | cm1    | Web Technology  | 412-624-9181 |                   5 |    1110001
+ 1110005 | Terry     | Wood    | tw1    | Hardware        | 412-624-9181 |                  16 |    1110001
+ 1110006 | Stephanie | DeRosa  | sd1    | Mac Systems     | 412-624-9181 |                   3 |    1110001
+(6 rows)
+
+ pplsoft |  fname  |  lname   | pittid | office_phone 
+---------+---------+----------+--------+--------------
+ 5550001 | Shenoda | Guirguis | shg18  | 412-624-8443
+ 5550002 | Lory    | Almoakar | la1    | 412-624-8443
+ 5550003 | Thao    | Pham     | tp1    | 412-624-8850
+ 5550004 | Michel  | Hanna    | mh1    | 412-624-8402
+(4 rows)
+
+ category_id |       category        |                     description                      
+-------------+-----------------------+------------------------------------------------------
+           1 | Printing Problem      | problems have to do with printers and printing
+           2 | Network Problem       | problems have to do with the network and/or internet
+           3 | Windows OS problem    | problems have to do with Windows OS maintenance
+           4 | Unix/Linux OS problem | problems have to do with Unix/Linux OS maintenance
+           5 | Hardware Problem      | HW maintenance issues
+           6 | Software Problem      | SW maintenance issues
+           7 | Server Problem        | Any problem has to do with the dept. servers
+           8 | Software install      | Requests to install additional SW
+           9 | Web Problem           | Any problem has to do with the dept. web sites
+          10 | Windows Help          |  Questions about Windows (hotline support
+          11 | Unix/Linux Help       | Questions about Unix/Linux (hotline support)
+          12 | SW Help               | Questions about installed SW (hotline support)
+          13 | AFS problem           | Prolbmes related to the AFS system.
+(13 rows)
+
+     machine_name     |   ip_address    | network_port |    mac_address    | location_id 
+----------------------+-----------------+--------------+-------------------+-------------
+ acta.cs.pitt.edu     | 102.168.222.226 | sq6-52       | 01:23:45:67:89:ab |           1
+ kaly.cs.pitt.edu     | 102.168.222.227 | sq5-14       | 01:23:45:67:89:ac |           3
+ elements.cs.pitt.edu | 102.168.222.228 | sq5-23       | 01:23:45:67:89:ad |           5
+ kaso.cs.pitt.edu     | 102.168.222.229 | sq6-22       | 01:23:45:67:89:ae |           2
+ oxgyn.cs.pitt.edu    | 102.168.212.216 | sq5-17       | 01:23:45:67:89:af |           3
+ rodi.cs.pitt.edu     | 102.168.212.217 | sq6-51       | 01:23:45:67:89:ba |           1
+ java lab machine     | 102.168.212.220 | sq6-41       | 01:23:45:67:89:bb |           4
+(7 rows)
+
+ location_id | location  | building |       notes       
+-------------+-----------+----------+-------------------
+           1 | 6th floor | SENSQ    | db research lab
+           2 | 6th floor | SENSQ    | os research lab
+           3 | 5th floor | SENSQ    | arch research lab
+           4 | 6th floor | SENSQ    | java lab
+           5 | 5th floor | SENSQ    | reading room
+(5 rows)
+
+ ticket_number | owner_pplsoft | date_submitted | date_closed | days_worked_on | category_id |     machine_name     |                   description                    
+---------------+---------------+----------------+-------------+----------------+-------------+----------------------+--------------------------------------------------
+        567841 |       5550001 | 2019-12-20     | 2020-01-02  |             14 |           5 | acta.cs.pitt.edu     | The fan is noisy.
+        567842 |       5550002 | 2019-12-20     | 2019-12-22  |              3 |           1 | kaly.cs.pitt.edu     | Can not print any PDF file!
+        567843 |       5550002 | 2019-12-23     |             |                |           6 | elements.cs.pitt.edu | Seems that the server is down?!
+        567844 |       5550001 | 2019-12-28     | 2019-12-31  |              4 |           6 | acta.cs.pitt.edu     | The AFS client crashes all the time!
+        567845 |       5550003 | 2020-01-01     | 2020-01-05  |              5 |           4 | kaso.cs.pitt.edu     | The mouse responds in a weird way.
+        567846 |       5550002 | 2020-01-02     | 2020-01-02  |              1 |           2 | oxgyn.cs.pitt.edu    | can not connect to the oxgyn server!
+        567847 |       5550001 | 2020-01-05     | 2020-01-06  |              2 |           8 | acta.cs.pitt.edu     | I failed to login to the evaluation site.
+        567848 |       5550003 | 2020-01-05     | 2020-01-12  |              8 |           7 | kaso.cs.pitt.edu     | May I have SigmaPlot installed on my machine?
+        567849 |       5550003 | 2020-01-13     |             |                |           5 | kaso.cs.pitt.edu     | Some keys on the keyboard does not function. 
+        567850 |       5550004 | 2020-01-14     |             |                |          10 | rodi.cs.pitt.edu     | The sound card is unrecognized.
+        567851 |       5550001 | 2020-01-14     | 2020-01-23  |             10 |           5 | acta.cs.pitt.edu     | The harddrive got bad sector.
+        567852 |       5550003 | 2020-01-14     | 2020-02-17  |             35 |           3 | kaso.cs.pitt.edu     | Windows crashed!
+        567853 |       5550003 | 2020-01-15     | 2020-01-21  |              7 |          12 | kaso.cs.pitt.edu     | can not reach AFS-home directory from home.
+        567854 |       5550001 | 2020-01-16     | 2020-01-17  |              2 |           6 | acta.cs.pitt.edu     | I have trouble configuring Outlook.
+        567855 |       5550003 | 2020-01-20     |             |                |           3 | kaso.cs.pitt.edu     | Windows crashed!
+        567856 |       5550004 | 2020-01-25     |             |                |           8 | java lab machine     | Can not submit my h/w using the submission site.
+        567857 |       5550001 | 2020-03-29     |             |                |           8 | acta.cs.pitt.edu     | Machine wont boot.
+(17 rows)
+
+ ticket_number | tech_pplsoft | date_assigned |      status       | outcome 
+---------------+--------------+---------------+-------------------+---------
+        567841 |      1110001 | 2019-12-20    | delegated         | 
+        567841 |      1110002 | 2020-01-02    | closed_successful | 
+        567842 |      1110002 | 2019-12-22    | closed_successful | 
+        567843 |      1110001 | 2019-12-23    | assigned          | 
+        567844 |      1110003 | 2019-12-31    | closed_successful | 
+        567845 |      1110003 | 2020-01-05    | closed_successful | 
+        567846 |      1110002 | 2020-01-02    | closed_successful | 
+        567847 |      1110001 | 2020-01-06    | closed_successful | 
+        567848 |      1110003 | 2020-01-05    | delegated         | 
+        567848 |      1110001 | 2020-01-12    | closed_successful | 
+        567849 |      1110003 | 2020-01-13    | in_progress       | 
+        567850 |      1110004 | 2020-01-14    | in_progress       | 
+        567851 |      1110001 | 2020-01-14    | delegated         | 
+        567851 |      1110002 | 2020-01-23    | closed_successful | 
+        567852 |      1110003 | 2020-02-17    | closed_successful | 
+        567853 |      1110003 | 2020-01-15    | delegated         | 
+        567853 |      1110001 | 2020-01-21    | closed_successful | 
+        567854 |      1110001 | 2020-01-17    | closed_successful | 
+        567855 |      1110001 | 2020-01-20    | in_progress       | 
+        567856 |      1110003 | 2020-01-25    | delegated         | 
+        567856 |      1110004 | 2020-01-25    | in_progress       | 
+(21 rows)
+
+    usernames     
+------------------
+ Lory Almoakar
+ Shenoda Guirguis
+(2 rows)
+
+  usernames   
+--------------
+ Michel Hanna
+ Thao Pham
+(2 rows)
+
+      staff       | supervisor  
+------------------+-------------
+ Bob Hoffman      | 
+ Samantha Cortes  | Bob Hoffman
+ Rich Health      | Bob Hoffman
+ Christian Mason  | Bob Hoffman
+ Terry Wood       | Bob Hoffman
+ Stephanie DeRosa | Bob Hoffman
+(6 rows)
+
+  users  
+---------
+ 5550003
+(1 row)
+
+ average_days_worked_on 
+------------------------
+     5.8333333333333333
+(1 row)
+
+   fullname   | num_tickets_submitted 
+--------------+-----------------------
+ Michel Hanna |                     2
+(1 row)
+
+     machine_name     | num_problems 
+----------------------+--------------
+ elements.cs.pitt.edu |            1
+ kaly.cs.pitt.edu     |            1
+ oxgyn.cs.pitt.edu    |            1
+(3 rows)
+
+ date_submitted 
+----------------
+(0 rows)
+
+     category     | num_tickets_submitted 
+------------------+-----------------------
+ Hardware Problem |                     2
+ Software install |                     2
+(2 rows)
+
+DROP VIEW
+CREATE VIEW
+     category     | num_tickets_submitted 
+------------------+-----------------------
+ Hardware Problem |                     2
+ Software install |                     2
+(2 rows)
+
+DROP VIEW
+CREATE VIEW
+DROP VIEW
+CREATE VIEW
+DROP VIEW
+CREATE VIEW
+DROP VIEW
+CREATE VIEW
+DROP VIEW
+CREATE VIEW
+DROP VIEW
+CREATE VIEW
+DROP VIEW
+CREATE VIEW
+ tech_pplsoft | pplsoft2 | total_days_worked_on_closed | total_days_worked_on_in_progress 
+--------------+----------+-----------------------------+----------------------------------
+      1110001 |  1110001 |                           0 |                               11
+      1110002 |          |                           0 |                                 
+      1110003 |  1110003 |                           0 |                               18
+              |  1110004 |                             |                               23
+(4 rows)
+
+DROP VIEW
+CREATE VIEW
+ tech_pplsoft | pplsoft2 | pplsoft3 | total_days_worked_on_closed | total_days_worked_on_in_progress | total_days_worked_on_delegated 
+--------------+----------+----------+-----------------------------+----------------------------------+--------------------------------
+      1110001 |  1110001 |          |                           0 |                               11 |                               
+      1110002 |          |          |                           0 |                                  |                               
+      1110003 |  1110003 |          |                           0 |                               18 |                               
+              |  1110004 |  1110004 |                             |                               23 |                              0
+(4 rows)
+
+DROP TABLE
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+    fullname     | total_days_worked 
+-----------------+-------------------
+ Samantha Cortes |                 0
+ Bob Hoffman     |                20
+ Christian Mason |                23
+ Rich Health     |                31
+(4 rows)
+

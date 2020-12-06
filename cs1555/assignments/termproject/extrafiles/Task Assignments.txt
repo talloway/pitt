@@ -1,0 +1,16 @@
+Luke:
+Admin: 2, 3, 4, 5
+Customer: 1, 9
+
+Adarsh:
+Admin: 1
+Customer: 2, 3, 7, 8, 13
+
+Avery:
+Admin: 6 (x), 7 (x)
+Customer: 4 (x), 10 (x), 11 (x), 12 (x)
+
+Remaining:
+Tasks:
+Customer: 5 (x), 6 (x)
+All Triggers

@@ -1,0 +1,59 @@
+[CS1555/2055] Simple GitHub Guide for Term Project
+For our project, we are expecting each group of students to create one repository for the
+project, and you need to add your Instructor and TAs as collaborators of your project.
+To use Github you can first register through following link:
+https://github.com/join
+To create a new repository, one of the member should log in to your github account:
+• In the upper right corner, next to your avatar, click and then select New repository.
+• Name your repository.
+• Write a short description.
+• Select Initialize this repository with a README.
+• Click Create repository
+To add your TA as collaborator of your project:
+• Click on the "Settings" link in the right side menu, below "Network"
+• On the new page, click the "Collaborators" menu item on the left side of the page.
+• Start typing the new collaborator's GitHub username (of all other team mates and TA)
+into the text box.
+• Select the GitHub user from the list that appears below the text box.
+• Click the "Add" button.
+Overall the GitHub web interface is straightforward and easy to use, for more information
+about the GitHub you can visit: https://guides.github.com/.
+Using Git Directly:
+Git is a version control system that is used for software development and other version control
+tasks. While, GitHub is a web serveries that allows your to publish your Git repositories and
+operates with you Git repositories with graphic web interface.
+If you wish to use Git commends directly with local terminal to access your repository, you can
+do so by first install Git on your local machine by visiting following links:
+For Windows: https://git-for-windows.github.io/
+For MacOS: https://code.google.com/archive/p/git-osx-installer/downloads
+For Linux: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+Below are some useful Git commends that you may use, for more detailed information
+please visit: https://git-scm.com/documentation.
+1.To checkout a repository
+create a working copy of a local repository by running the command
+git clone /path/to/repository
+when using github, your command will be
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+2. add & commit
+You can propose changes (add it to the Index) using
+git add <filename>
+git add *
+To actually commit these changes use
+git commit -m "Commit message"
+Note, this commits the file to the HEAD, but not in your remote repository yet.
+3. pushing changes
+Your changes are now in the HEAD of your local working copy. To send those changes to your
+remote repository, execute
+git push origin master
+4. updates
+to update your local repository to the newest commit, execute
+git pull
+These comments mentioned covered the very basic that you would need to conduct your project
+with Git. If you have any question about Git commends it is highly encouraged you to read
+following document: https://git-scm.com/documentation. 
+NOTE:
+Each time after you have made changes to your project and repository remember to commit your
+changes. Each commit would generate a commit ID.
+When you submit your milestones you need to email us your commit ID together with the full
+web link to your repository each time you submit a milestone.
+For the project, each group can only submit once per milestone per group. 

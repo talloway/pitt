@@ -1,0 +1,3 @@
+SELECT * FROM (SELECT * FROM CS_Tech.tickets NATURAL JOIN CS_Tech.assignments) AS hs JOIN CS_Tech.tech_personnel ON hs.tech_pplsoft = CS_Tech.tech_personnel.pplSoft WHERE fname='Bob' AND lname='Hoffman' AND status='assigned';
+
+SELECT fname, lname, MIN(ticket_number) FROM CS_Tech.users JOIN CS_tech.tickets ON users.pplsoft = tickets.owner_pplsoft WHERE date_submitted = '25-DEC-2019' GROUP BY fname, lname, ticket_number;

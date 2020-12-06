@@ -1,0 +1,128 @@
+Lucas Leiby (lwl10)
+Avery Peiffer (aep65)
+Adarsh Cavale (aac90)
+
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+CREATE FUNCTION
+ getcancellationtime 
+---------------------
+ 2020-11-02 01:55:00
+(1 row)
+
+ getcancellationtime 
+---------------------
+ 2020-12-13 22:05:00
+(1 row)
+
+ getcancellationtime 
+---------------------
+ 2020-11-05 02:15:00
+(1 row)
+
+ getcancellationtime 
+---------------------
+ 2020-12-14 18:30:00
+(1 row)
+
+ getcancellationtime 
+---------------------
+ 2020-11-03 20:25:00
+(1 row)
+
+CREATE FUNCTION
+ isplanefull 
+-------------
+ f
+(1 row)
+
+ isplanefull 
+-------------
+ f
+(1 row)
+
+ isplanefull 
+-------------
+ f
+(1 row)
+
+ isplanefull 
+-------------
+ f
+(1 row)
+
+ isplanefull 
+-------------
+ f
+(1 row)
+
+DROP PROCEDURE
+CREATE PROCEDURE
+CALL
+DROP TRIGGER
+CREATE TRIGGER
+CREATE FUNCTION
+DROP TRIGGER
+CREATE TRIGGER
+CREATE FUNCTION
