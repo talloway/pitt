@@ -1,3 +1,3 @@
-# coe 0449: systems software
+# COE 0449: Systems Software
 
-### fall 2019
+### Fall 2019

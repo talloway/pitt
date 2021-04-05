@@ -1,3 +1,3 @@
-# cs 1656: introduction to data science
+# CS 1656: Introduction to Data Science
 
-### fall 2020
+### Fall 2020

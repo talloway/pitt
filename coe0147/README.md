@@ -1,3 +1,3 @@
-# coe 0147: computer organization and assembly language
+# COE 0147: Computer Organization and Assembly Language
 
-### spring 2019
+### Spring 2019

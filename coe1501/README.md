@@ -1,3 +1,3 @@
-# coe 1501: algorithm implementation
+# COE 1501: Algorithm Implementation
 
-### fall 2019
+### Fall 2019

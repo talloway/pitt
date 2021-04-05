@@ -1,3 +1,3 @@
-# coe 0445: data structures
+# COE 0445: Data Structures
 
-### spring 2019
+### Spring 2019

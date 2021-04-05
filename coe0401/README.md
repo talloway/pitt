@@ -1,3 +1,3 @@
-# coe 0401: intermediate programming using java
+# COE 0401: Intermediate Programming using Java
 
-### fall 2018
+### Fall 2018

@@ -1,3 +1,3 @@
-# coe 1541: computer architecture
+# COE 1541: Computer Architecture
 
-### fall2020
+### Fall 2020

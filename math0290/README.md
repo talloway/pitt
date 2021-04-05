@@ -1,3 +1,3 @@
-# math 0290: differential equations
+# MATH 0290: Differential Equations
 
-### spring 2018
+### Spring 2018

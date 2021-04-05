@@ -1,3 +1,3 @@
-# coe 1530: software engineering
+# COE 1530: Software Engineering
 
-### summer 2020
+### Summer 2020
