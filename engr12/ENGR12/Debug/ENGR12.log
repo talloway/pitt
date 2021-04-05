@@ -1,0 +1,8 @@
+﻿  Week1.cpp
+c:\users\avery peiffer\desktop\engr12\engr12\week1.cpp(23): warning C4838: conversion from 'double' to 'int' requires a narrowing conversion
+c:\users\avery peiffer\desktop\engr12\engr12\week1.cpp(23): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\avery peiffer\desktop\engr12\engr12\week1.cpp(18): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'double'
+c:\users\avery peiffer\desktop\engr12\engr12\week1.cpp(19): warning C4477: 'printf' : format string '%lf' requires an argument of type 'double', but variadic argument 1 has type 'int'
+c:\users\avery peiffer\desktop\engr12\engr12\week1.cpp(19): warning C4477: 'printf' : format string '%lf' requires an argument of type 'double', but variadic argument 3 has type 'int'
+c:\users\avery peiffer\desktop\engr12\engr12\week1.cpp(20): warning C4477: 'printf' : format string '%c' requires an argument of type 'int', but variadic argument 2 has type 'double'
+  ENGR12.vcxproj -> C:\Users\Avery Peiffer\Desktop\ENGR12\Debug\ENGR12.exe

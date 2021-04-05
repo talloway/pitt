@@ -1,0 +1,144 @@
+
+**** 04/13/19 15:26:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Avery Peiffer\Desktop\COE_0257_ExtraCredit\extracredit-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Avery Peiffer\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 20ms 0 .00001 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EXTRACREDIT
+V_V1         N14315 0 3Vdc
+R_R1         0 V_OUT  1k TC=0,0 
+D_D4         N14315 V_OUT D1N4001 
+D_D5         N15442 N15451 D1N4001 
+R_RL         0 N15451  10k TC=0,0 
+V_V3         N15442 0  
++SIN 0 5 1k 0 0 0
+V_V4         N16016 0  
++SIN 0 5 1k 0 0 0
+D_D6         N16016 N16075 D1N4003 
+C_C1         0 N16075  47u  TC=0,0 
+R_R3         0 N16075  100 TC=0,0 
+R_R4         N17112 N17146  1k TC=0,0 
+X_D9         N17146 N171740 awb1n4733 PARAMS:               
+X_D10         0 N171740 awb1n4733 PARAMS:               
+V_V6         N17112 0  
++SIN 0 7.5 100 0 0 0
+D_D11         0 N17556 D1N4001 
+R_R5         N17556 N17519  1k TC=0,0 
+D_D12         N17556 0 D1N4001 
+V_V7         N17519 0  
++SIN 0 2.5 100 0 0 0
+
+**** RESUMING bias.cir ****
+.END
+
+**** 04/13/19 15:26:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Avery Peiffer\Desktop\COE_0257_ExtraCredit\extracredit-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4001         D1N4003         
+          IS   14.110000E-09   14.110000E-09 
+           N    1.984           1.984        
+         IKF   94.81           94.81         
+          BV   75             300            
+         IBV   10.000000E-06   10.000000E-06 
+          RS     .03389          .03389      
+          TT    5.700000E-06    5.700000E-06 
+         CJO   25.890000E-12   25.890000E-12 
+          VJ     .3245           .3245       
+           M     .44             .44         
+
+
+**** 04/13/19 15:26:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Avery Peiffer\Desktop\COE_0257_ExtraCredit\extracredit-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(V_OUT)    2.3823  (N14315)    3.0000 (N15442)    0.0000 (N15451)-15.52E-21     
+
+(N16016)    0.0000 (N16075)-151.3E-24 (N17112)    0.0000 (N17146) 742.7E-27     
+
+(N17519)    0.0000 (N17556)-1.394E-24 (N171740) 1.638E-06                       
+
+(X_D9.xinst1n4733.1)   -4.5892        (X_D9.xinst1n4733.3)    4.5892            
+
+(X_D9.xinst1n4733.9)-30.67E-15        (X_D10.xinst1n4733.1)   -4.5892           
+
+(X_D10.xinst1n4733.3)    4.5892       (X_D10.xinst1n4733.9)-30.67E-15       
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.382E-03
+    V_V3         1.552E-24
+    V_V4         1.513E-24
+    V_V6         7.427E-28
+    V_V7        -1.394E-27
+
+    TOTAL POWER DISSIPATION   7.15E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/13/19 15:26:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Avery Peiffer\Desktop\COE_0257_ExtraCredit\extracredit-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .30
+

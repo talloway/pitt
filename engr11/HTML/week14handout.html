@@ -1,0 +1,30 @@
+<html>
+
+<head>
+
+  <script>
+function number(){
+  var n = document.getElementsByName("fruit").length;
+  document.getElementById("span1").innerHTML = n;
+  document.write("The number of fruit entries is: ");
+}
+  </script>
+<span id = "span1"> </span>
+</head>
+
+<form>
+  <input type = "checkbox" name = "fruit" id = "apples" />apples
+  <input type = "checkbox" name = "fruit" id = "oranges" />oranges
+  <input type = "checkbox" name = "fruit" id = "grapes" />grapes
+  <input type = "checkbox" name = "animal" id = "tiger" />tiger
+  <input type = "checkbox" name = "fruit" id = "tomatoes" />tomatoes
+</form>
+
+<script>
+  document.write("Click the button below to find out how many entries are defined as fruit");
+</script>
+
+<button onclick = "number()"> Display fruit entries </button>
+
+
+</html>

@@ -1,0 +1,109 @@
+
+**** 01/15/19 17:37:20 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sec2"  [ C:\Users\Avery Peiffer\Desktop\CoE 0257\0257HW1-PSpiceFiles\2\0257HW1-PSpiceFiles\SCHEMATIC1\sec2.s
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sec2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Avery Peiffer\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 .05 0 .0001 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 0257HW1
+V_V1         N02367 0  
++SIN 0V 5V 100Hz 0 0 0
+D_D1         N02398 N02367 Dbreak 
+D_D2         N02398 0 Dbreak 
+R_R1         N02519 N02398  1k TC=0,0 
+I_I1         N02552 N02519 DC 1mAdc  
+V_V2         N02552 0 15Vdc
+
+**** RESUMING sec2.cir ****
+.END
+
+**** 01/15/19 17:37:20 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sec2"  [ C:\Users\Avery Peiffer\Desktop\CoE 0257\0257HW1-PSpiceFiles\2\0257HW1-PSpiceFiles\SCHEMATIC1\sec2.s
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          
+          IS   10.000000E-15 
+          RS     .1          
+         CJO  100.000000E-15 
+
+
+**** 01/15/19 17:37:20 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sec2"  [ C:\Users\Avery Peiffer\Desktop\CoE 0257\0257HW1-PSpiceFiles\2\0257HW1-PSpiceFiles\SCHEMATIC1\sec2.s
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N02367)    0.0000 (N02398)     .6372 (N02519)    1.6372 (N02552)   15.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         5.000E-04
+    V_V2        -1.000E-03
+
+    TOTAL POWER DISSIPATION   1.50E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/15/19 17:37:20 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sec2"  [ C:\Users\Avery Peiffer\Desktop\CoE 0257\0257HW1-PSpiceFiles\2\0257HW1-PSpiceFiles\SCHEMATIC1\sec2.s
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .09
+

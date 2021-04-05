@@ -1,0 +1,53 @@
+<html>
+<head> <title> Form Practice </title>
+<script>
+
+  function displayFunction() {
+    var textname = document.getElementsByName("textentry");
+    var radioname = document.getElementsByName("car");
+    var choicename = document.getElementById("choice");
+
+    document.getElementById("textresult").innerHTML = textname[0].value;
+    document.getElementById("choiceresult").innerHTML = choicename.value;
+
+    if (radioname[0].checked == true) {
+      document.getElementById("radioresult").innerHTML = radioname[0].value;
+    }
+
+    if (radioname[1].checked == true) {
+      document.getElementById("radioresult").innerHTML = radioname[1].value;
+
+    }
+    else {
+      document.getElementById("radioresult").innerHTML = radioname[2].value;
+    }
+  }
+
+</script>
+</head>
+
+<body>
+<form action = "#" method = post>
+Enter text<input type = "text" name = "textentry"><br /><br />
+
+Select car:
+<input type = "radio" name = "car" value = "Honda"> Honda
+<input type = "radio" name = "car" value = "Toyota">Toyota
+<input type = "radio" name = "car" value = "lexus">Lexus<br /> <br />
+
+Make choice:
+<select id = "choice">
+  <option>Buy</option>
+  <option>Rent</option>
+  <option>Lease</option>
+</select> <br /> <br />
+
+<button type = "button" onclick = "displayFunction()">Click to submit</button>
+</form>
+
+<p id = "textresult">Your text here</p>
+<p id = "radioresult">Your radio here</p>
+<p id = "choiceresult">Your choice here</p>
+
+</body>
+</html>

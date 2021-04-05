@@ -1,0 +1,176 @@
+
+**** 03/31/19 14:42:23 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Avery Peiffer\Desktop\homework6-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Avery Peiffer\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 100us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source HOMEWORK6
+X_M1         N14449 VIN N14522 2N7000/FAI
+R_RS1         N15435 N14522  220 TC=0,0 
+R_RG         0 VIN  10k TC=0,0 
+C_CS         N15435 0  47uF  TC=0,0 
+C_CC2         N14449 VOUT  47u  TC=0,0 
+R_RL         0 VOUT  10k TC=0,0 
+C_CC1         N16220 VIN  47u  TC=0,0 
+R_Rsig         N162481 N16220  50 TC=0,0 
+V_V2         N162481 0  
++SIN 0 300mV 10k 0 0 0
+R_RD         N14449 N16585  1.17k TC=0,0 
+V_Vdd         N16585 0 15Vdc
+R_RS2         N16708 N15435  12.566k TC=0,0 
+V_Vss         N16708 0 -15Vdc
+
+**** RESUMING bias.cir ****
+.END
+
+**** 03/31/19 14:42:23 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Avery Peiffer\Desktop\homework6-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_M1.DDS        X_M1.DBODY      X_M1.DGD        
+          IS   10.000000E-15  140.000000E-15   10.000000E-15 
+          BV   60.0864                                       
+          RS                     .04                         
+          TT                  100.000000E-09                 
+         CJO   23.000000E-12                   85.000000E-12 
+          VJ     .8                              .12         
+           M     .36                             .53         
+
+
+**** 03/31/19 14:42:23 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Avery Peiffer\Desktop\homework6-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_M1.DMOS       X_M1.INTER      
+               NMOS            NMOS            
+       LEVEL    3               1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO    2.09328         0            
+          KP     .35           10            
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX  100.000000E-09    0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+        VMAX  220.000000E+03                 
+       THETA     .086                        
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+**** 03/31/19 14:42:23 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Avery Peiffer\Desktop\homework6-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)     .0138  ( VOUT)    0.0000  (N14449)   13.8230 (N14522)   -2.1563     
+
+(N15435)   -2.3773 (N16220)    0.0000 (N16585)   15.0000 (N16708)  -15.0000     
+
+(X_M1.1)     .0138 (X_M1.2)   13.8220 (X_M1.3)   -2.1563 (X_M1.4)   13.8230     
+
+(X_M1.5)   -2.1563 (X_M1.6)     .0138 (X_M1.7)   13.8230 (X_M1.8)   27.6320     
+
+(X_M1.9)  -27.6040 (N162481)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         0.000E+00
+    V_Vdd       -1.006E-03
+    V_Vss        1.005E-03
+
+    TOTAL POWER DISSIPATION   3.02E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 03/31/19 14:42:23 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Avery Peiffer\Desktop\homework6-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+

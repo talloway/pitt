@@ -1,0 +1,83 @@
+<!-- TEMPCONV HTML FILE
+ This file contains JavaScript to convert Fahrenheit to Celsius
+ or Celsius to Fahrenheit
+ -->
+
+<!-- November 8, 2016 -->
+
+
+<html>
+    
+    
+<!-- Set background color -->
+    
+
+<body bgcolor=#F2F1EB>
+        
+        
+<!-- Display page title. Make sure it is exactly
+         the same as rightFrame.html
+         -->
+
+    
+<font face="Arial" size=+3 color="black">CONVERTED TEMPERATURE</font>
+        
+        
+
+
+<!-- JavaScript to convert Fahrenheit to Celsius or 
+         Celsius to Fahrenheit
+         -->
+        
+
+<p> <font face = "Arial"> <font color = "black">
+
+<script>
+      
+	var userChoice, start;
+
+
+	
+	userChoice = prompt("Enter 1 for Fahrenheit to Celsius, 2 for Celsius to Fahrenheit: ");
+	start = prompt("\nEnter starting temperature: ");
+	
+	
+
+	userChoice = Number(userChoice);
+	start = Number(start);
+
+	
+
+	
+
+	if (userChoice == 1) {
+		start = (start - 32)/1.8;
+		document.write("The Celsius temperature is: ", start);
+	}
+	
+
+	if (userChoice != 1) {
+		start = (start*1.8 + 32);
+		document.write("The Fahrenheit temperature is: ", start);
+	}
+	
+
+	
+
+</script>
+
+</font> </font> </p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+      
+            

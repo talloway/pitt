@@ -1,0 +1,8 @@
+* source 0257HW1
+V_V1         N02367 0  
++SIN 0V 5V 100Hz 0 0 0
+D_D1         N02398 N02367 Dbreak 
+D_D2         N02398 0 Dbreak 
+R_R1         N02519 N02398  1k TC=0,0 
+I_I1         N02552 N02519 DC 1mAdc  
+V_V2         N02552 0 15Vdc

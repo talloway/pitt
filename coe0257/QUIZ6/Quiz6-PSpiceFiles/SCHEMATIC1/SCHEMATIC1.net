@@ -1,0 +1,12 @@
+* source QUIZ6
+X_M1         N14604 0 N14319 2N7000/FAI
+R_Rs         N14356 N14319  6.39k TC=0,0 
+V_V-         N14356 0 -15Vdc
+C_CC1         N14443 N14319  47u  TC=0,0 
+R_Rsig         N14492 N14443  50 TC=0,0 
+V_Vsig         N14492 0  
++SIN 0 5mV 1k 0 0 0
+C_CC2         N14604 N14660  47u  TC=0,0 
+R_RL         0 N14660  10k TC=0,0 
+R_RD         N14604 N14802  152 TC=0,0 
+V_V+         N14802 0 15Vdc

@@ -1,0 +1,113 @@
+<!-- Page created by Avery Peiffer. Last modified 12/4/2017. -->
+<html>
+
+<head> <title> Contact Us </title>
+
+  <script>
+        function infoSummary() {
+          var name = document.getElementById("N");
+          var gender = document.getElementById("selectGender");
+          var age = document.getElementById("selectAge");
+          var message = document.getElementById("Message");
+          var checkedBox = document.getElementsByName("Check");
+          var reasons = document.getElementsByName("Reason");
+          var j = 0;
+          var checkBoxDisplay="", addcomma = 0;
+
+          if(reasons[0].checked == true) {
+            document.getElementById("Span5").innerHTML = "Compliment us";
+          }
+          else if(reasons[1].checked == true) {
+            document.getElementById("Span5").innerHTML = "Make a Complaint";
+          }
+          else if(reasons[2].checked == true) {
+            document.getElementById("Span5").innerHTML = "Leave a suggestion";
+
+          }
+          else if(reasons[3].checked == true) {
+            document.getElementById("Span5").innerHTML = "Other";
+          }
+
+         while (j < checkedBox.length) {
+           if (checkedBox[j].checked == true) {
+             if (addcomma == 1) {
+               checkBoxDisplay = checkBoxDisplay + ", ";
+             }
+             checkBoxDisplay = checkBoxDisplay + checkedBox[j].value;
+             addcomma = 1;
+           }
+           j = j + 1;
+         }
+
+          document.getElementById("Span1").innerHTML = name.value;
+          document.getElementById("Span2").innerHTML = age.value;
+          document.getElementById("Span3").innerHTML = gender.value;
+          document.getElementById("Span4").innerHTML = message.value;
+          document.getElementById("Span6").innerHTML = checkBoxDisplay;
+
+        }
+
+  </script>
+</head>
+
+
+<body bgcolor = "peachpuff">
+<h2 align = "center"> <font color = "deepskyblue"> Contact Us </font> </h2>
+
+<form action = "mailto:aep65@pitt.edu" method = "post" id = "myForm" name = "myForm">
+
+  <b> <font size = "+1"> Demographic Information </font> </b> <br> <br>
+  Name: <input type = "text" name = "Name" id = "N"> <br>
+  <p> Gender
+    <select name = "Gender" id = "selectGender">
+      <option>Male</option>
+      <option>Female</option>
+      <option>I prefer not to answer</option>
+      <option selected>Please stop asking this question</option>
+      <option>Leave me alone</option>
+    </select>
+   </p>
+   <p> Age
+     <select name = "Age" id = "selectAge">
+       <option selected> 10-20 </option>
+       <option> 20-30 </option>
+       <option> 30-40 </option>
+       <option> 40-50 </option>
+       <option> 50-60 </option>
+       <option> 60+ </option>
+     </select>
+   </p> <br> <br>
+
+    <b> <font size = "+1"> Nature of Contact </font> </b> <br> <br>
+    Reason for contact: <br>
+    <input type = "radio" name = "Reason" id = "Compliment">Compliment us
+    <br> <input type = "radio" name = "Reason" id = "Complaint">Make a Complaint
+    <br> <input type = "radio" name = "Reason" id = "Suggestion">Leave a Suggestion
+    <br> <input type = "radio" name = "Reason" id = "Other">Other <br> <br>
+
+    Please check all that apply to you:<br>
+    <input type = "checkbox" name = "Check" id = "prior"> I have bought a LAB product before <br>
+    <input type = "checkbox" name = "Check" id = "Satisfaction"> I am interested in buying a product from LAB <br>
+    <input type = "checkbox" name = "Check" id = "Information"> I would like more information about a product from LAB <br>
+    <input type = "checkbox" name = "Check" id = "Refund"> I would like to return my LAB product <br>
+    <input type = "checkbox" name = "Check" id = "Job"> I would like to apply for a position at LAB <br>
+    <br> <br>
+
+    Please enter your message for us here: <br> <textarea name = "Message" rows = "5" cols = "25" id = "Message" wrap = "hard"> </textarea>
+
+    <br> <input type = "submit" name = "SubmitButton" id = "submitButton" value = "Submit the data" onclick = "infoSummary()">
+    <input type = "reset" name = "ResetButton" id = "resetButton" value = "Reset form">
+
+    <br> <br> <b> <font size = "+1"> Summary </font> </b> <br> <br>
+    Name: <span id = "Span1"></span> <br>
+    Age Range: <span id = "Span2"></span> <br>
+    Gender: <span id = "Span3"></span> <br>
+    Message: <span id = "Span4"></span> <br>
+    Reason for Contact: <span id = "Span5"></span> <br>
+    Relationship to LAB: <span id = "Span6"></span> <br>
+
+
+
+</form>
+</body>
+</html>

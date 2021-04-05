@@ -1,0 +1,49 @@
+<html>
+<body>
+<!-- getElementsByName for all form elements except select -->
+
+<form action = "#" method = post>
+
+Enter text: <input type = "text" name = "fname" value = "Enter here"> <br>
+<input type = "radio" name = "choice" value = "1">Choice 1<br>
+<input type = "radio" name = "choice" value = "2">Choice 2<br>
+<input type = "radio" name = "choice" value = "3">Choice 3<br>
+<!-- Array [1, 2, 3] is created, checked property is true for item selected -->
+<select id = "cars">
+	<option value = "Honda">Honda</option>
+  <option value = "2">Car2</option>
+	<option value = "3">Car3</option>
+</select>
+<button type = "button" onclick = "myFunc()">Submit</button>
+</form>
+
+<p id = "results">Your response here</p> <!-- Changes everything between two p tags -->
+
+<!-- <p id = "results>Your <span id = "greetings">response</span> here </p> When ID greetings is referenced response is the only thing replaced -->
+
+<p id = "choiceresults"> Your choice here</p>
+
+<p id = "carresults"> Your car here </p>
+
+<script>
+	function myFunc() {
+    var somethingelse = document.getElementsByName("fname");
+    document.getElementById("results").innerHTML = somethingelse[0].value;
+
+		var somethingelseelse = document.getElementsByName("choice");
+		if(somethingelseelse[0].checked == true) {
+    document.getElementById("choiceresults").innerHTML = somethingelseelse[0].value;
+    }
+    else if(somethingelseelse[1].checked == true) {
+    document.getElementById("choiceresults").innerHTML = somethingelseelse[1].value;
+    }
+    else {
+    document.getElementById("choiceresults").innerHTML = somethingelseelse[2].value;
+    }
+
+		var ellse = document.getElementById("cars");
+    document.getElementById("carresults").innerHTML = ellse.value;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,411 @@
+
+**** 02/23/19 00:34:24 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Avery Peiffer\Desktop\homework5-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../homework5-pspicefiles/homework5.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Avery Peiffer\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OP
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source HOMEWORK5
+V_VDS1         N16786 0 5Vdc
+V_VGS1         N16812 0 2.5
+X_M2         N16786 N16812 0 2N7000/FAI
+X_M5         N16786 N17453 0 2N7000/FAI
+V_VGS2         N17453 0 3
+V_VGS3         N17718 0 3.5
+X_M6         N16786 N17718 0 2N7000/FAI
+V_VDS2         N18546 0 5Vdc
+V_VGS4         N18594 0 5Vdc
+X_M7         N18546 N18594 0 2N7000/FAI
+M_M8         N18779 N18844 N18844 N18844 Mbreakn           
+V_V1         N18779 0 5Vdc
+V_V2         N18844 0 3Vdc
+
+**** RESUMING bias.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file homework5.ind for library file homework5.lib.
+
+INFO(ORPSIM-15422): Making new index file homework5.ind for library file homework5.lib.
+
+Index has 1 entries from 1 file(s).
+
+**** 02/23/19 00:34:24 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Avery Peiffer\Desktop\homework5-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_M2.DDS        X_M2.DBODY      X_M2.DGD        X_M5.DDS        
+          IS   10.000000E-15  140.000000E-15   10.000000E-15   10.000000E-15 
+          BV   60.0864                                         60.0864       
+          RS                     .04                                         
+          TT                  100.000000E-09                                 
+         CJO   23.000000E-12                   85.000000E-12   23.000000E-12 
+          VJ     .8                              .12             .8          
+           M     .36                             .53             .36         
+
+
+               X_M5.DBODY      X_M5.DGD        X_M6.DDS        X_M6.DBODY      
+          IS  140.000000E-15   10.000000E-15   10.000000E-15  140.000000E-15 
+          BV                                   60.0864                       
+          RS     .04                                             .04         
+          TT  100.000000E-09                                  100.000000E-09 
+         CJO                   85.000000E-12   23.000000E-12                 
+          VJ                     .12             .8                          
+           M                     .53             .36                         
+
+
+               X_M6.DGD        X_M7.DDS        X_M7.DBODY      X_M7.DGD        
+          IS   10.000000E-15   10.000000E-15  140.000000E-15   10.000000E-15 
+          BV                   60.0864                                       
+          RS                                     .04                         
+          TT                                  100.000000E-09                 
+         CJO   85.000000E-12   23.000000E-12                   85.000000E-12 
+          VJ     .12             .8                              .12         
+           M     .53             .36                             .53         
+
+
+**** 02/23/19 00:34:24 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Avery Peiffer\Desktop\homework5-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Mbreakn         X_M2.DMOS       X_M2.INTER      X_M5.DMOS       
+               NMOS            NMOS            NMOS            NMOS            
+       LEVEL    1               3               1               3            
+           L    1.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+           W   10.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+         VTO     .5             2.09328         0               2.09328      
+          KP  100.000000E-06     .35           10                .35         
+       GAMMA    0               0               0               0            
+         PHI     .6              .6              .6              .6          
+      LAMBDA    0               0               0               0            
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          JS    0               0               0               0            
+          PB     .8              .8              .8              .8          
+        PBSW     .8              .8              .8              .8          
+          CJ    0               0               0               0            
+        CJSW    0               0               0               0            
+        CGSO    0               0               0               0            
+        CGDO    0               0               0               0            
+        CGBO    0               0               0               0            
+         TOX    0             100.000000E-09    0             100.000000E-09 
+          XJ    0               0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
+        VMAX                  220.000000E+03                  220.000000E+03 
+       THETA                     .086                            .086        
+      DIOMOD    1               1               1               1            
+         VFB    0               0               0               0            
+        LETA    0               0               0               0            
+        WETA    0               0               0               0            
+          U0    0               0               0               0            
+        TEMP    0               0               0               0            
+         VDD    5               5               5               5            
+       XPART    0               0               0               0            
+
+
+               X_M5.INTER      X_M6.DMOS       X_M6.INTER      X_M7.DMOS       
+               NMOS            NMOS            NMOS            NMOS            
+       LEVEL    1               3               1               3            
+           L  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+         VTO    0               2.09328         0               2.09328      
+          KP   10                .35           10                .35         
+       GAMMA    0               0               0               0            
+         PHI     .6              .6              .6              .6          
+      LAMBDA    0               0               0               0            
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          JS    0               0               0               0            
+          PB     .8              .8              .8              .8          
+        PBSW     .8              .8              .8              .8          
+          CJ    0               0               0               0            
+        CJSW    0               0               0               0            
+        CGSO    0               0               0               0            
+        CGDO    0               0               0               0            
+        CGBO    0               0               0               0            
+         TOX    0             100.000000E-09    0             100.000000E-09 
+          XJ    0               0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
+        VMAX                  220.000000E+03                  220.000000E+03 
+       THETA                     .086                            .086        
+      DIOMOD    1               1               1               1            
+         VFB    0               0               0               0            
+        LETA    0               0               0               0            
+        WETA    0               0               0               0            
+          U0    0               0               0               0            
+        TEMP    0               0               0               0            
+         VDD    5               5               5               5            
+       XPART    0               0               0               0            
+
+
+               X_M7.INTER      
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    0            
+          KP   10            
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 02/23/19 00:34:24 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Avery Peiffer\Desktop\homework5-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N16786)    5.0000 (N16812)    2.5000 (N17453)    3.0000 (N17718)    3.5000     
+
+(N18546)    5.0000 (N18594)    5.0000 (N18779)    5.0000 (N18844)    3.0000     
+
+(X_M2.1)    2.5000 (X_M2.2)    4.9823 (X_M2.3) 252.9E-06 (X_M2.4)    4.9924     
+
+(X_M2.5)    0.0000 (X_M2.6)    2.5000 (X_M2.7)    4.9924 (X_M2.8)    7.4848     
+
+(X_M2.9)   -2.4848 (X_M5.1)    3.0000 (X_M5.2)    4.9235 (X_M5.3)     .0011     
+
+(X_M5.4)    4.9672 (X_M5.5)    0.0000 (X_M5.6)    3.0000 (X_M5.7)    4.9672     
+
+(X_M5.8)    6.9344 (X_M5.9)    -.9344 (X_M6.1)    3.5000 (X_M6.2)    4.8369     
+
+(X_M6.3)     .0023 (X_M6.4)    4.9301 (X_M6.5)    0.0000 (X_M6.6)    3.5000     
+
+(X_M6.7)    4.9301 (X_M6.8)    6.3602 (X_M6.9)     .6398 (X_M7.1)    5.0000     
+
+(X_M7.2)    4.4791 (X_M7.3)     .0074 (X_M7.4)    4.7768 (X_M7.5)    0.0000     
+
+(X_M7.6)    4.7768 (X_M7.7)    5.0000 (X_M7.8)    4.3303 (X_M7.9)    5.4465 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VDS1      -3.676E-01
+    V_VGS1       2.492E-07
+    V_VGS2       1.967E-07
+    V_VGS3       1.430E-07
+    V_VDS2      -7.441E-01
+    V_VGS4      -2.232E-08
+    V_V1        -2.010E-12
+    V_V2         2.010E-12
+
+    TOTAL POWER DISSIPATION   5.56E+00  WATTS
+
+
+**** 02/23/19 00:34:24 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Avery Peiffer\Desktop\homework5-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** VOLTAGE-CONTROLLED VOLTAGE SOURCES
+
+
+NAME         X_M2.E2     X_M2.E3     X_M5.E2     X_M5.E3     X_M6.E2   
+V-SOURCE     4.985E+00  -4.985E+00   3.934E+00  -3.934E+00   2.860E+00
+I-SOURCE     1.421E-14   0.000E+00  -5.684E-14   0.000E+00  -3.460E-14
+
+NAME         X_M6.E3     X_M7.E2     X_M7.E3   
+V-SOURCE    -2.860E+00  -4.465E-01   4.465E-01
+I-SOURCE     0.000E+00  -7.582E-24   0.000E+00
+
+
+**** DIODES
+
+
+NAME         X_M2.Dds    X_M2.Dbody  X_M2.Dgd    X_M5.Dds    X_M5.Dbody
+MODEL        X_M2.DDS    X_M2.DBODY  X_M2.DGD    X_M5.DDS    X_M5.DBODY
+ID          -5.00E-12   -5.14E-12   -2.50E-12   -4.98E-12   -5.14E-12 
+VD          -4.99E+00   -5.00E+00   -2.49E+00   -4.97E+00   -5.00E+00 
+REQ          1.00E+12    1.00E+12    1.00E+12    1.00E+12    1.00E+12 
+CAP          1.13E-11    1.00E-19    1.66E-11    1.13E-11    1.00E-19 
+
+NAME         X_M5.Dgd    X_M6.Dds    X_M6.Dbody  X_M6.Dgd    X_M7.Dds  
+MODEL        X_M5.DGD    X_M6.DDS    X_M6.DBODY  X_M6.DGD    X_M7.DDS  
+ID          -1.98E-12   -4.94E-12   -5.14E-12   -1.44E-12   -4.78E-12 
+VD          -1.97E+00   -4.93E+00   -5.00E+00   -1.43E+00   -4.77E+00 
+REQ          1.00E+12    1.00E+12    1.00E+12    1.00E+12    1.00E+12 
+CAP          1.87E-11    1.13E-11    1.00E-19    2.19E-11    1.14E-11 
+
+NAME         X_M7.Dbody  X_M7.Dgd  
+MODEL        X_M7.DBODY  X_M7.DGD  
+ID          -5.13E-12    3.23E-18 
+VD          -4.99E+00    2.33E-06 
+REQ          1.00E+12    7.21E+11 
+CAP          1.00E-19    8.50E-11 
+
+
+**** MOSFETS
+
+
+NAME         M_M8        X_M2.M1     X_M2.M2     X_M2.M3     X_M5.M1   
+MODEL        Mbreakn     X_M2.DMOS   X_M2.INTER  X_M2.INTER  X_M5.DMOS 
+ID           2.01E-12    2.53E-02   -2.49E-07    2.50E-12    1.09E-01 
+VGS          0.00E+00    2.50E+00    4.98E+00   -4.98E+00    3.00E+00 
+VDS          2.00E+00    4.98E+00   -5.00E-09    2.49E+00    4.92E+00 
+VBS          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+VTH          5.00E-01    2.09E+00    0.00E+00    0.00E+00    2.09E+00 
+VDSAT        0.00E+00    3.85E-01    4.98E+00    0.00E+00    8.03E-01 
+Lin0/Sat1   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+if          -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+ir          -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+TAU         -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+GM           0.00E+00    1.16E-01    5.00E-08    0.00E+00    2.10E-01 
+GDS          0.00E+00    6.14E-04    4.98E+01    0.00E+00    4.67E-03 
+GMB          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CBD          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CBS          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGSOV        0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGDOV        0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGBOV        0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGS          0.00E+00    2.30E-16    0.00E+00    0.00E+00    2.30E-16 
+CGD          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGB          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+
+NAME         X_M5.M2     X_M5.M3     X_M6.M1     X_M6.M2     X_M6.M3   
+MODEL        X_M5.INTER  X_M5.INTER  X_M6.DMOS   X_M6.INTER  X_M6.INTER
+ID          -1.97E-07    1.98E-12    2.33E-01   -1.43E-07    1.44E-12 
+VGS          3.93E+00   -3.93E+00    3.50E+00    2.86E+00   -2.86E+00 
+VDS         -5.00E-09    1.97E+00    4.83E+00   -5.00E-09    1.43E+00 
+VBS          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+VTH          0.00E+00    0.00E+00    2.09E+00    0.00E+00    0.00E+00 
+VDSAT        3.93E+00    0.00E+00    1.17E+00    2.86E+00    0.00E+00 
+Lin0/Sat1   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+if          -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+ir          -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+TAU         -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+GM           5.00E-08    0.00E+00    2.71E-01    5.00E-08    0.00E+00 
+GDS          3.93E+01    0.00E+00    1.26E-02    2.86E+01    0.00E+00 
+GMB          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CBD          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CBS          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGSOV        0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGDOV        0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGBOV        0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGS          0.00E+00    0.00E+00    2.30E-16    0.00E+00    0.00E+00 
+CGD          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGB          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+
+NAME         X_M7.M1     X_M7.M2     X_M7.M3   
+MODEL        X_M7.DMOS   X_M7.INTER  X_M7.INTER
+ID           7.44E-01    2.33E-13   -2.23E-08 
+VGS          4.99E+00   -4.46E-01    4.46E-01 
+VDS          4.47E+00    2.23E-01   -5.00E-09 
+VBS          0.00E+00    0.00E+00    0.00E+00 
+VTH          2.09E+00    0.00E+00    0.00E+00 
+VDSAT        2.06E+00    0.00E+00    4.46E-01 
+Lin0/Sat1   -1.00E+00   -1.00E+00   -1.00E+00 
+if          -1.00E+00   -1.00E+00   -1.00E+00 
+ir          -1.00E+00   -1.00E+00   -1.00E+00 
+TAU         -1.00E+00   -1.00E+00   -1.00E+00 
+GM           3.63E-01    0.00E+00    5.00E-08 
+GDS          5.04E-02    0.00E+00    4.46E+00 
+GMB          0.00E+00    0.00E+00    0.00E+00 
+CBD          0.00E+00    0.00E+00    0.00E+00 
+CBS          0.00E+00    0.00E+00    0.00E+00 
+CGSOV        0.00E+00    0.00E+00    0.00E+00 
+CGDOV        0.00E+00    0.00E+00    0.00E+00 
+CGBOV        0.00E+00    0.00E+00    0.00E+00 
+CGS          2.30E-16    0.00E+00    0.00E+00 
+CGD          0.00E+00    0.00E+00    0.00E+00 
+CGB          0.00E+00    0.00E+00    0.00E+00 
+
+          JOB CONCLUDED
+
+**** 02/23/19 00:34:24 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Avery Peiffer\Desktop\homework5-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .11
+

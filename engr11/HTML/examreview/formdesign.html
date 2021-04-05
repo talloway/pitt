@@ -1,0 +1,82 @@
+<html>
+
+<form action = "#" method = "post">
+
+  First name: <input type = "text" name = "fname" value = "Please enter your name"> <br />
+  Last name: <input type = "text" name = "lname"> <br />
+  Preferred username: <input type = "text" name = "username" value = "Enter preferred username"> <br />
+  Preferred password: <input type = "password" name = "pass"> <br />
+  Gender <select id = "gender"> <br />
+    <option selected> </option>
+    <option> Male </option>
+    <option> Female </option>
+  </select>
+  <br />
+  Select age range:
+    <input type = "radio" name = "age" value = "under 20"> under 20 <br />
+    <input type = "radio" name = "age" value = "21-30"> 21-30 <br />
+    <input type = "radio" name = "age" value = "over 30"> over 30 <br />
+  <br />
+  <textarea rows = "5" cols = "50" wrap = "hard" name = "bio">Double click this message and provide a brief biography</textarea>
+
+  What are you interested in(please check all that apply): <br />
+    <input type = "checkbox" name = "interest" value = "music">music
+    <input type = "checkbox" name = "interest" value = "art">art
+    <input type = "checkbox" name = "interest" value = "sport">sport
+    <input type = "checkbox" name = "interest" value = "engineering">engineering
+
+    <button type = "button" onclick = "infoForm()">Submit form</button>
+    <button type = "reset"> Reset form </button>
+</form>
+  <p> First name:<span id = "span1"></span> </p>
+  <p> Last name:<span id = "span2"></span> </p>
+  <p> Username:<span id = "span3"></span> </p>
+  <p> Password:<span id = "span4"></span> </p>
+  <p> Gender:<span id = "span5"></span> </p>
+  <p> Age:<span id = "span6"></span> </p>
+  <p> Bio:<span id = "span7"></span> </p>
+  <p> Interest:<span id = "span8"></span> </p>
+
+  <script>
+  function infoForm() {
+    var fname = document.getElementsByName("fname");
+    var lname = document.getElementsByName("lname");
+    var username = document.getElementsByName("username");
+    var password = document.getElementsByName("pass");
+    var gender = document.getElementById("gender");
+    var age = document.getElementsByName("age");
+    var bio = document.getElementsByName("bio");
+    var interest = document.getElementsByName("interest");
+
+    document.getElementById("span1").innerHTML = fname[0].value;
+    document.getElementById("span2").innerHTML = lname[0].value;
+    document.getElementById("span3").innerHTML = username[0].value;
+    document.getElementById("span4").innerHTML = password[0].value;
+    document.getElementById("span5").innerHTML = gender.value;
+    document.getElementById("span7").innerHTML = bio[0].value;
+
+    if (age[0].checked == true) {
+      document.getElementById("span6").innerHTML = age[0].value;
+    }
+    else if (age[1].checked == true) {
+      document.getElementById("span6").innerHTML = age[1].value;
+    }
+    else {
+      document.getElementById("span6").innerHTML = age[2].value;
+    }
+
+    var checkbox = "";
+    var j = 0;
+    while (j < interest.length) {
+      if (interest[j].checked == true) {
+        checkbox = checkbox + interest[j].value;
+      }
+      j = j + 1;
+    }
+    document.getElementById("span8").innerHTML = checkbox;
+
+}
+
+
+  </script>
+</html>

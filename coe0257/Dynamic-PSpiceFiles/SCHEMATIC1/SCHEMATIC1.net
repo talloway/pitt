@@ -1,0 +1,45 @@
+* source DYNAMIC
+V_V1         VDD 0 2.5
+M_M3         N35677 CMOS_IN VDD VDD CMOSP  
++ L=250n  
++ W=360n         
+M_M5         N35677 CMOS_IN 0 0 CMOSN  
++ L=250n  
++ W=360n         
+V_V2         CMOS_IN 0  
++PULSE 0 2.5 0 100p 100p .5n 1n
+M_M7         CMOS_OUT N35677 0 0 CMOSN  
++ L=250n  
++ W=360n         
+M_M6         CMOS_OUT N35677 VDD VDD CMOSP  
++ L=250n  
++ W=360n         
+V_V3         N36789 0 2.5Vdc
+R_R1         N36849 N36789  12.55k TC=0,0 
+V_V4         N36923 0 5Vdc
+M_M8         N36849 N36923 0 0 CMOSN  
++ L=250n  
++ W=1050n         
+M_M9         N37686 N37678 N37634 N37634 CMOSP  
++ L=250n  
++ W=1200n         
+M_M10         N37686 N37678 0 0 CMOSN  
++ L=250n  
++ W=360n         
+V_V5         N37634 0 2.5Vdc
+V_V6         N37678 0  
++PULSE 0 2.5 0 10pS 10pS .5ns 1ns
+M_M11         N39275 N37686 N39191 N39191 CMOSP  
++ L=250n  
++ W=1200n         
+V_V7         N39191 0 2.5Vdc
+M_M12         N39275 N37686 0 0 CMOSN  
++ L=250n  
++ W=360n         
+V_V8         N40280 0 2.5Vdc
+M_M13         N40368 N37686 N40280 N40280 CMOSP  
++ L=250n  
++ W=1200n         
+M_M14         N40368 N37686 0 0 CMOSN  
++ L=250n  
++ W=360n         

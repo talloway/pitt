@@ -1,0 +1,43 @@
+
+**** 01/15/19 17:26:20 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sec2"  [ C:\Users\Avery Peiffer\Desktop\CoE 0257\0257HW1-PSpiceFiles\2\0257HW1-PSpiceFiles\SCHEMATIC1\sec2.s
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sec2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Avery Peiffer\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 .05 0 .0001 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 0257HW1
+V_V1         N01986 0  
++SIN 0V 5V 100Hz 0 0 0
+R_R1         N01986 N01993  1k TC=0,0 
+D_D1         N01993 N02000 Dbreak 
+
+**** RESUMING sec2.cir ****
+.END
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N02000.
+

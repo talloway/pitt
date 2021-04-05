@@ -1,0 +1,54 @@
+<html>
+
+<head>
+<title> AEP65 - Assignment #12 </title> 
+</head>
+
+<font color = "black">
+<body>
+
+<h1> First JavaScript Program </h1>
+
+<script>
+	//Displays initial information at top of page.
+	document.write("<h2> This is the JavaScript code for Group R09. </h2>");
+	document.write("\n The group members are: ");
+	document.write("\n <ul> <li> Lukas Kuehne </li> <li> Avery Peiffer </li> <li> Brendan Querey </li> </ul>");
+	document.write("The date today is: " + Date());
+
+	//Horizontal Rule to separate top of page from rest.
+	document.write("<hr width = 50% size = 1 align = 'left' />");
+
+	//Alert pop-up that contains instructions on escape characters
+	alert("The first \\n puts the text on a new line, the double slash by the n is \nneeded to allow the printing of the \\n in this printout. If you want to \nadd a tab in the print out you insert \\t it will tab the text as shown \nhere. \n\nSometimes it is nice to print out text in \"double quotes\", this requires \nthe double quote escape sequence \\\". Sometimes it is nice to print out \ntext in \'single quotes\', this requires the single quote escape sequence \\\'. \n\nFinally, notice all the single slashes \'\\\' at the end of each line. These \nallow you to wrap the string to the next line for easy reading. \n\nDo you understand \nthe code required to print this out?");
+
+	//Initial assignment of variables and their display
+	var a = 7, b = 12, message1 = "I love college. ", message2 = "Playing college is fun";
+	document.write("<h4>a = " + a + "</h4>");
+	document.write("<h4>b = " + b + "</h4>");
+	document.write("<h4>message1 = " + message1 + "</h4>");
+	document.write("<h4>message2 = " + message2 + "</h4>");
+
+	//Results of addition/concatenation of variables
+	document.write("<h4>a + b = " + (a+b) + "</h4>");
+	document.write("<h4>message1 + message2 = " + (message1+message2) + "</h4>");
+	document.write("<h4>a + message1 = " + (a+message1) + "</h4>");
+
+	//Prompt to enter two separate numbers. A new copy of the variable is made to convert it to a number, while the original variable remains a string	
+	aPrime = prompt("Enter a number \'a\': ");
+	bPrime = prompt("Enter a number \'b\': ");
+	aNumber = Number(aPrime);
+	bNumber = Number(bPrime);
+	document.write("<h4> a = " + aNumber + "</h4>");
+	document.write("<h4> b = " + bNumber + "</h4>");
+	document.write("<h4> a + b = " + (aNumber + bNumber) + "</h4>");
+
+	//Multiplication of strings from original prompt
+	document.write("<h4> a * b = " + (aPrime*bPrime) + "</h4>");
+
+
+</script>
+
+</body>
+</font>
+</html>

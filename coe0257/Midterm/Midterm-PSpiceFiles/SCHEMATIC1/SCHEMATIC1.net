@@ -1,0 +1,38 @@
+* source MIDTERM
+V_V1         N14335 0 10Vdc
+R_R1         N14384 N14335  139.45 TC=0,0 
+D_D1         N14384 N144291 Dbreak 
+D_D2         N144291 N145461 Dbreak 
+D_D3         N145461 0 Dbreak 
+V_V2         N14806 0 5Vdc
+R_R2         N14850 N14806  100 TC=0,0 
+D_D4         N14850 N14902 Dbreak 
+D_D5         N14850 N14953 Dbreak 
+V_V3         N14902 0 5Vdc
+V_V4         N14953 0 4Vdc
+V_V5         N15137 0 10Vdc
+R_R3         N15181 N15137  1k TC=0,0 
+D_D6         N15181 N15222 Dbreak 
+V_V6         N15222 0 -1Vdc
+R_R4         N153271 N15181  5k TC=0,0 
+D_D7         N153271 0 Dbreak 
+R_R5         N15509 N15555  1k TC=0,0 
+D_D8         N155830 N15555 Dbreak 
+D_D9         0 N155830 Dbreak 
+V_V8         N15555 N156631 1.3Vdc
+D_D10         N156631 0 Dbreak 
+V_V9         N15509 0  
++SIN 0 3 10k 0 0 0
+V_V10         N16051 0 15Vdc
+R_R6         N16095 N16051  300 TC=0,0 
+V_V11         N16330 0 2Vdc
+M_M1         N16368 N16330 N16466 N16466 Mbreakn           
+R_R8         N16368 N16399  2k TC=0,0 
+V_V12         N16399 0 6Vdc
+R_R9         0 N16466  500 TC=0,0 
+V_V13         N16625 0 5Vdc
+M_M2         N16783 N16625 0 0 Mbreakn           
+M_M3         N16771 N16625 N16783 N16783 Mbreakp           
+V_V14         N16771 0 5Vdc
+D_D11         0 N16095 D1N4733 
+R_R10         0 N16095  1k TC=0,0 

@@ -1,0 +1,158 @@
+
+**** 04/18/19 13:59:43 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Dyn_Sim"  [ C:\Users\Avery Peiffer\Desktop\dynamic-pspicefiles\schematic1\dyn_sim.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Dyn_Sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../dynamic-pspicefiles/dynamic.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Avery Peiffer\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN V_V4 0 2.5 .01 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source DYNAMIC
+V_V1         VDD 0 2.5
+M_M3         N35677 CMOS_IN VDD VDD CMOSP  
++ L=250n  
++ W=360n         
+M_M5         N35677 CMOS_IN 0 0 CMOSN  
++ L=250n  
++ W=360n         
+V_V2         CMOS_IN 0  
++PULSE 0 2.5 0 100p 100p .5n 1n
+M_M7         CMOS_OUT N35677 0 0 CMOSN  
++ L=250n  
++ W=360n         
+M_M6         CMOS_OUT N35677 VDD VDD CMOSP  
++ L=250n  
++ W=360n         
+V_V3         N36789 0 2.5Vdc
+R_R1         N36849 N36789  12.55k TC=0,0 
+V_V4         N36923 0 5Vdc
+M_M8         N36849 N36923 0 0 CMOSN  
++ L=250n  
++ W=1050n         
+M_M9         N37686 N37678 N37634 N37634 CMOSP  
++ L=250n  
++ W=1200n         
+M_M10         N37686 N37678 0 0 CMOSN  
++ L=250n  
++ W=360n         
+V_V5         N37634 0 2.5Vdc
+V_V6         N37678 0  
++PULSE 0 2.5 0 10pS 10pS .5ns 1ns
+M_M11         N39275 N37686 N39191 N39191 CMOSP  
++ L=250n  
++ W=1200n         
+V_V7         N39191 0 2.5Vdc
+M_M12         N39275 N37686 0 0 CMOSN  
++ L=250n  
++ W=360n         
+V_V8         N40280 0 2.5Vdc
+M_M13         N40368 N37686 N40280 N40280 CMOSP  
++ L=250n  
++ W=1200n         
+M_M14         N40368 N37686 0 0 CMOSN  
++ L=250n  
++ W=360n         
+
+**** RESUMING Dyn_Sim.cir ****
+.END
+
+**** 04/18/19 13:59:43 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Dyn_Sim"  [ C:\Users\Avery Peiffer\Desktop\dynamic-pspicefiles\schematic1\dyn_sim.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               CMOSP           CMOSN           
+               PMOS            NMOS            
+       LEVEL    3               3            
+         TPG   -1                            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+          LD  996.834600E-15   31.622780E-12 
+          WD    5.475113E-09   12.328810E-09 
+         VTO    -.553609         .423825     
+          KP   51.941530E-06  250.104800E-06 
+       GAMMA     .634837         .431731     
+         PHI     .7              .7          
+      LAMBDA    0               0            
+         RSH   30.0777          4.062439E-03 
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .990601         .5          
+        PBSW     .990601         .5          
+          CJ    1.893569E-03    1.812110E-03 
+        CJSW  362.554400E-12  534.133700E-12 
+          MJ     .466429         .328255     
+        MJSW     .5              .5          
+        CGSO  666.000000E-12  620.000000E-12 
+        CGDO  666.000000E-12  620.000000E-12 
+        CGBO  100.000000E-12  100.000000E-12 
+        NSUB  100.000000E+15  100.000000E+15 
+         NFS    1.000000E+12    1.000000E+12 
+         TOX    5.700000E-09    5.700000E-09 
+          XJ  200.000000E-09  300.000000E-09 
+          UO  250             425.6467       
+       UCRIT   10.000000E+03   10.000000E+03 
+        VMAX  229.532500E+03   82.878510E+03 
+       DELTA    0               0            
+       THETA     .15732          .175405     
+         ETA    0               0            
+       KAPPA     .744849         .168678     
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+
+          JOB CONCLUDED
+
+**** 04/18/19 13:59:43 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Dyn_Sim"  [ C:\Users\Avery Peiffer\Desktop\dynamic-pspicefiles\schematic1\dyn_sim.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .05
+

@@ -1,0 +1,132 @@
+<html>
+<h1 align = "center"> <b> Assignment 13: Find the surface area of three shapes </b> </h1>
+
+<p> <img src = "https://www.mathsisfun.com/geometry/images/cuboid-lwh.svg" height = 100 align = "center"/> (Enter 1) Rectangular prism of sides a, b, c = 2ab + 2bc + 2ac </p>
+<p> <img src = "http://images.clipartpanda.com/inheritance-clipart-FC_Sphere_41749_lg.gif" height = 100 align = "center"/> (Enter 2) Sphere of radius r = 4*pi*r<sup>2</sup> </p>
+<p> <img src = "http://etc.usf.edu/clipart/41700/41702/fc_cylinder_41702_lg.gif" height = 100 align = "center"/> (Enter 3) Cylinder of radius r and height h = 2*pi*r<sup>2</sup> + 2*pi*r*h </p>
+
+<script>
+
+
+// Declare a metric ton of variables
+var numInput, sideA, sideAside, sideB, sideBside, sideC, sideCside, surfPrism, radSphere, radSphereRad, surfSphere, radCyl, radCylRad, heightCyl, heightCylHeight, surfCylinder;
+var cont = 0
+var error = 0;
+var textInput;
+var shapecount = 1;
+
+// Continue loop until user actions change value of cont
+while(cont == 0) {
+
+numInput = prompt("Enter 1 for rectangular prism, 2 for sphere, or 3 for cylinder");
+numInput = Number(numInput);
+
+  // Check to see if input was 1, 2, or 3. If not, rerun the prompt
+  if (numInput != 1 && numInput != 2 && numInput != 3) {
+    alert("You did not enter a 1, 2, or 3. Please try again.");
+    error += 1;
+    continue;
+  }
+
+  // Process for calculating surface area of rectangular prism
+  else if (numInput == 1){
+
+
+    // Prompt user for each side length. If value entered is not a valid number, return error
+    sideA = prompt("Enter side length a: ");
+    sideAside = Number(sideA);
+    if(sideAside != sideA || sideAside < 0) {
+      alert("You did not enter a valid side length. Please try again. ");
+      error += 1;
+      continue;
+      document.write(error);
+    }
+
+    sideB = prompt("Enter side length b: ");
+    sideBside = Number(sideB);
+    if(sideBside != sideB || sideBside < 0) {
+      alert("You did not enter a valid side length. Please try again.");
+      error += 1;
+      continue;
+    }
+
+    sideC = prompt("Enter side length c: ");
+    sideCside = Number(sideC);
+    if(sideCside != sideC || sideCside < 0) {
+      alert("You did not enter a valid side length. Please try again.");
+      error += 1;
+      continue;
+    }
+
+    // Calculate surface area for Prism
+    surfPrism = 2*(sideAside*sideBside + sideAside*sideCside + sideBside*sideCside);
+    document.write("<p>Surface area for rectangular prism with sides " + sideAside +", " + sideBside +", " + sideCside + " = " + surfPrism + "</p>");
+
+  }
+
+  // Process for calculating surface area of sphere
+  else if (numInput == 2){
+
+    // Prompt user for radius. If input is not a valid number, return error
+    radSphere = prompt("Enter the sphere's radius ");
+    radSphereRad = Number(radSphere);
+    if(radSphereRad != radSphere || radSphereRad < 0) {
+      alert("You did not enter a valid radius. Please try again.");
+      error += 1;
+      continue;
+    }
+
+    // Calculate surface area of sphere
+    surfSphere = 4*3.1415926535*radSphereRad**2
+    document.write("<p>Surface area of a sphere with radius " + radSphereRad + " = " + surfSphere + "</p>");
+  }
+
+  // Process for calculating surface area of cylinder
+  else if (numInput == 3){
+
+    // Prompt user for radius and height. If either inputs are invalid, return error and restart
+    radCyl = prompt("Enter the cylinder's radius ");
+    radCylRad = Number(radCyl);
+    if(radCylRad < 0 || radCylRad != radCyl) {
+      alert("You did not enter a valid radius. Please try again.");
+      error += 1;
+      continue;
+    }
+    heightCyl = prompt("Enter the cylinder's height ");
+    heightCylHeight = Number(heightCyl);
+    if(heightCylHeight < 0 || heightCylHeight != heightCyl){
+      alert("You did not enter a valid height. Please try again. ");
+      error += 1;
+      continue;
+    }
+    surfCylinder = 2*3.1415926535*(radCylRad**2 + radCylRad*heightCylHeight);
+    document.write("<p>Surface area of a cylinder with radius " + radCylRad + " and height " + heightCylHeight + " = " + surfCylinder +"</p>");
+
+  }
+
+
+// Ask user if he or she wishes to calculate another surface area. If y or Y is not entered, assume user does not want to continue.
+textInput = prompt("Do you want to continue? Enter y for yes, n for no");
+
+  if(textInput == "y" || textInput == "Y") {
+    shapecount += 1;
+    continue;
+    }
+    else {
+      cont = 1;
+
+    }
+
+}
+
+// Write out final results of amount of shapes calculated and the number of user errors
+document.write("<h2> <b> Well that was fun </b> </h2>");
+document.write("<br />You found the area of " + shapecount + " different shapes");
+document.write("<br />You made " + error + " input mistake(s)");
+
+
+</script>
+
+
+
+</html>

@@ -1,0 +1,15 @@
+* source HOMEWORK6
+X_M1         N14449 VIN N14522 2N7000/FAI
+R_RS1         N15435 N14522  220 TC=0,0 
+R_RG         0 VIN  10k TC=0,0 
+C_CS         N15435 0  47uF  TC=0,0 
+C_CC2         N14449 VOUT  47u  TC=0,0 
+R_RL         0 VOUT  10k TC=0,0 
+C_CC1         N16220 VIN  47u  TC=0,0 
+R_Rsig         N162481 N16220  50 TC=0,0 
+V_V2         N162481 0  
++SIN 0 300mV 10k 0 0 0
+R_RD         N14449 N16585  1.17k TC=0,0 
+V_Vdd         N16585 0 15Vdc
+R_RS2         N16708 N15435  12.566k TC=0,0 
+V_Vss         N16708 0 -15Vdc

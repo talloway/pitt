@@ -1,0 +1,117 @@
+<html>
+
+<head>
+<title> ENGR 0011 Homework 14 </title>
+
+<script>
+
+  function calcVolume() {
+    var unitUnit = document.getElementsByName("units"); // Gets array from units radio
+    var shapeShape = document.getElementById("selectShape"); // Gets array from shape select
+    var radiusRadius = document.getElementById("R"); // Gets value from r
+    var heightHeight = document.getElementById("H"); // Gets value from h
+    var unitt, unitcubed;
+
+    // Fill in text and second row of table with selected units
+    if (unitUnit.checked[0] == 1) { // Fill in English units if it is selected
+      document.getElementById("Span1").innerHTML = unitUnit[0].value;
+      unitt = "feet";
+      unitcubed = "feet^3";
+    }
+    else { // Fill in SI units if it is selected
+      document.getElementById("Span1").innerHTML = unitUnit[1].value;
+      unitt = "meters";
+      unitcubed = "meters^3";
+    }
+    document.getElementById("Span3").innerHTML = unitt.value;
+    document.getElementById("Span4").innerHTML = unitt.value;
+    document.getElementById("Span5").innerHTML = unitcubed.value;
+
+
+    // Check shape and calculate volume and fill in third row of table accordingly
+    if (shapeShape.checked[0] == 1) { // Procedure for calculating volume of cylinder
+      document.getElementById("Span2").innerHTML = shapeShape[0].value;
+      document.getElementById("Span6").innerHTML = shapeShape[0].value;
+      var volume = 3.1415926535*radiusRadius*radiusRadius*heightHeight;
+      document.getElementById("Span9").innerHTML = volume.value;
+    }
+
+    else if (shapeShape.checked[1] == 1) { // Procedure for calculating volume of sphere
+      document.getElementById("Span2").innerHTML = shapeShape[1].value;
+      document.getElementById("Span6").innerHTML = shapeShape[1].value;
+      var volume = 3.1415926535*4*radiusRadius*radiusRadius*radiusRadius/3;
+      document.getElementById("Span9").innerHTML = volume.value;
+    }
+
+    else { // Procedure for calculating volume of cone
+      document.getElementById("Span2").innerHTML = shapeShape[2].value;
+      document.getElementById("Span6").innerHTML = shapeShape[2].value;
+      var volume = 3.1415926535*radiusRadius*radiusRadius*heightHeight/3;
+      document.getElementById("Span9").innerHTML = volume.value;
+    }
+
+    // Fill in third row of table with radius and height values
+    document.getElementById("Span7").innerHTML = radiusRadius.value;
+    document.getElementById("Span8").innerHTML = heightHeight.value;
+ }
+
+</script>
+</head>
+
+<body>
+<h1> <b> This website will find the volume of a cylinder, sphere, or cone </b> </h1>
+
+
+<form action = "#" method = "POST" id = "myForm" name = "myForm">
+
+  Select the units (English or SI): <br>
+  <input type = "radio" name = "units" id = "units1" value = "English"> English
+  <input type = "radio" name = "units" id = "units2" value = "SI"> SI <br> <br>
+
+  Select the shape: <br>
+  <select name="shape" id = "selectShape">
+    <option>Cylinder</option>
+    <option>Sphere</option>
+    <option>Cone</option>
+  </select> <br> <br>
+
+  Enter the radius: <br>
+  <input type = "text" name = "radius" id = "R"  /> <br> <br>
+  For the cylinder and cone, enter the height: <br>
+  <input type = "text" name = "height" id = "H"  /> <br> <br>
+
+
+  <input type = "reset" value = "Reset the form">
+</form>
+
+<h2> <b> Results </b> </h2>
+<p> You selected to use <span id = "Span1"></span> units </p>
+<p> You selected to find the values for a <span id = "Span2"></span> shape </p>
+
+<table border = 1>
+  <tr>
+    <td> <b> Shape </b> </td>
+    <td> <b> Radius </b> </td>
+    <td> <b> Height </b> </td>
+    <td> <b> Volume </b> </td>
+  </tr>
+
+  <tr>
+    <td> </td>
+    <td> <span id = "Span3"></span></td>
+    <td> <span id = "Span4"></span></td>
+    <td> <span id = "Span5"></span></td>
+  </tr>
+
+  <tr>
+    <td> <span id = "Span6"></span></td>
+    <td> <span id = "Span7"></span></td>
+    <td> <span id = "Span8"></span></td>
+    <td> <span id = "Span9"></span></td>
+  </tr>
+</table>
+
+<br>
+<button onclick = "calcVolume()">Click to calculate the results</button>
+</body>
+</html>

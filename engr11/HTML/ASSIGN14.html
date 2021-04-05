@@ -1,0 +1,114 @@
+<html>
+<!-- Page created by Avery Peiffer. Last modified 12/4/2017. -->
+<head>
+<title> ENGR 0011 Homework 14 </title>
+
+<script>
+
+  function calcVolume() {
+    // Take in array from unit radio, selected items from shape, radius, and height
+    var unitUnit = document.getElementsByName("units");
+    var shapeShape = document.getElementById("selectShape");
+    var radiusRadius = document.getElementById("R"); // Gets value from r
+    var heightHeight = document.getElementById("H");
+    var volume, unitForm, unitFormCubed;
+
+    // Find out which unit was checked and display that value
+    if (unitUnit[0].checked == true) {
+      unitForm = "feet";
+      unitFormCubed = "feet^3";
+      document.getElementById("English/SI").innerHTML = unitUnit[0].value;
+    }
+    else if(unitUnit[1].checked == true) {
+      unitForm = "meters";
+      unitFormCubed = "meters^3";
+      document.getElementById("English/SI").innerHTML = unitUnit[1].value;
+    }
+
+    // Find out which shape was selected by comparing selected value to known options, then display value
+    if (shapeShape.value == "Cylinder") {
+      volume = 3.1415926535*radiusRadius.value**2*heightHeight.value;
+      document.getElementById("Volume").innerHTML = volume;
+    }
+    if (shapeShape.value == "Sphere") {
+      volume = 4*3.1415926535*radiusRadius.value**3/3;
+      document.getElementById("Volume").innerHTML = volume;
+    }
+    else {
+      volume = 3.1415926535*radiusRadius.value**2*heightHeight.value/3;
+      document.getElementById("Volume").innerHTML = volume;
+    }
+
+    // Display all values to form summary and table
+    document.getElementById("ShapeForm").innerHTML = shapeShape.value;
+    document.getElementById("Unit1").innerHTML = unitForm;
+    document.getElementById("Unit2").innerHTML = unitForm;
+    document.getElementById("UnitCubed").innerHTML = unitFormCubed;
+    document.getElementById("ShapeTable").innerHTML = shapeShape.value;
+    document.getElementById("Radius").innerHTML = radiusRadius.value;
+    document.getElementById("Height").innerHTML = heightHeight.value;
+ }
+
+</script>
+</head>
+
+<body>
+<h1> <b> This website will find the volume of a cylinder, sphere, or cone </b> </h1>
+
+
+<form action = "#" method = "POST" id = "myForm" name = "myForm">
+
+  Select the units (English or SI): <br> <!-- Radio to take in unit selection -->
+  <input type = "radio" name = "units" id = "units1" value = "English"> English
+  <input type = "radio" name = "units" id = "units2" value = "SI"> SI <br> <br>
+
+  Select the shape: <br> <!-- Select option to take in shape -->
+  <select name="selectShape" id = "selectShape">
+    <option>Cylinder</option>
+    <option>Sphere</option>
+    <option>Cone</option>
+  </select> <br> <br>
+
+
+  Enter the radius: <br> <!-- Text boxes to take in radius and height values -->
+  <input type = "text" name = "radius" id = "R"  /> <br> <br>
+  For the cylinder and cone, enter the height: <br>
+  <input type = "text" name = "height" id = "H"  /> <br> <br>
+
+
+  <input type = "reset" value = "Reset the form">
+</form>
+
+<h2> <b> Results </b> </h2>
+<p> You selected to use <span id = "English/SI"></span> units </p>
+<p> You selected to find the values for a <span id = "ShapeForm"></span> shape </p>
+
+
+<table border = 1> <!-- Table containing inputed values and results of calculation -->
+  <tr>
+    <td> <b> Shape </b> </td>
+    <td> <b> Radius </b> </td>
+    <td> <b> Height </b> </td>
+    <td> <b> Volume </b> </td>
+  </tr>
+
+  <tr>
+    <td> </td>
+    <td> <span id = "Unit1"> </span></td>
+    <td> <span id = "Unit2"></span></td>
+    <td> <span id = "UnitCubed"></span></td>
+  </tr>
+
+  <tr>
+    <td> <span id = "ShapeTable"></span></td>
+    <td> <span id = "Radius"></span></td>
+    <td> <span id = "Height"></span></td>
+    <td> <span id = "Volume"></span></td>
+  </tr>
+
+</table>
+
+<br>
+<button onclick = "calcVolume()">Click to calculate the results</button> <!-- Button that calls function when clicked -->
+</body>
+</html>

@@ -1,0 +1,37 @@
+* source HW2
+V_V1         N14530 0 3Vdc
+R_R1         N14530 N14537  12k TC=0,0 
+D_D1         N14537 0 Dbreak 
+D_D2         N14537 N14644 Dbreak 
+R_R2         N146831 N14644  6k TC=0,0 
+V_V2         N146831 0 -3Vdc
+V_V3         N14816 0 3Vdc
+R_R3         N14816 N14847  6k TC=0,0 
+D_D3         N14847 0 Dbreak 
+D_D4         N14847 N14928 Dbreak 
+R_R4         N149511 N14928  12k TC=0,0 
+V_V4         N149511 0 -3Vdc
+R_R5         N15149 N15180  10k TC=0,0 
+D_D5         0 N15180 Dbreak 
+V_V5         N15149 0  
++SIN 0 5V 1K 0 0 0
+R_R6         N15707 N16440  10k TC=0,0 
+D_D11         N16231 N16171 Dbreak 
+D_D12         N162071 0 Dbreak 
+D_D13         0 N16231 Dbreak 
+D_D10         N16171 N162071 Dbreak 
+R_R7         N16163 N16171  10k TC=0,0 
+D_D14         N16440 N163481 Dbreak 
+D_D15         N163481 N163661 Dbreak 
+D_D16         N163661 0 Dbreak 
+V_V8         N15707 0  
++SIN 0 5V 1k 0 0 0
+V_V9         N16163 0  
++SIN 0 5V 1k 0 0 0
+V_V10         N16890 0 5Vdc
+R_R8         N16890 N16924  1k TC=0,0 
+D_D17         N16924 0 D1N5230 
+V_V11         N17914 0 5Vdc
+R_R9         N17931 N17914  1k TC=0,0 
+D_D18         N17968 N17931 Dbreak 
+V_V12         N17968 0 -3Vdc

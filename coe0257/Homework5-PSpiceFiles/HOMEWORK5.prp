@@ -1,0 +1,29 @@
+("2N7000/FAI"
+    ("Creator"	"Device property file created by Property Controller")
+    ("device_info"
+        ("SYMBOL_NAME"	"nmos")
+        ("MODEL_TYPE"	"514")
+    )
+    ("model_params"
+        ("level_0"
+        )
+    )
+    ("device_pre_smoke"
+        ("TERM_ID"	"D")
+        ("TERM_IG"	"G")
+        ("NODE_VD"	"D")
+        ("NODE_VG"	"G")
+        ("NODE_VS"	"S")
+        ("DERATE_TYPE"	"NMOS")
+    )
+    ("device_max_ops"
+        ("IG"	"10n")
+        ("ID"	"200m")
+        ("VDG"	"60")
+        ("VDS"	"60")
+        ("VGSF"	"20")
+        ("VGSR"	"20")
+        ("PDM"	"400m")
+        ("TJ"	"150")
+    )
+)
