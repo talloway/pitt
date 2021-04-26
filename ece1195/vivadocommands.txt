@@ -1,0 +1,3 @@
+set_property library xil_defaultlib [get_files *.vhd]
+
+source C:/ECE1195/labs/[]/[].tcl

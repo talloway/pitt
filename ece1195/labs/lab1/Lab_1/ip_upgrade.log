@@ -1,0 +1,199 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Feb  8 12:25:29 2021
+| Host         : DESKTOP-9AE4DJD running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Lab_1_adder_subtractor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Lab_1_adder_subtractor_0_0 (xilinx.com:user:adder_subtractor:1.0) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Feb  5 18:05:35 2021
+| Host         : DESKTOP-9AE4DJD running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Lab_1_adder_subtractor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Lab_1_adder_subtractor_0_0 (xilinx.com:user:adder_subtractor:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Feb  5 17:53:35 2021
+| Host         : DESKTOP-9AE4DJD running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Lab_1_adder_subtractor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of Lab_1_adder_subtractor_0_0 (xilinx.com:user:adder_subtractor:1.0 (Rev. 9)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Feb  5 17:51:44 2021
+| Host         : DESKTOP-9AE4DJD running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Lab_1_adder_subtractor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Lab_1_adder_subtractor_0_0 (xilinx.com:user:adder_subtractor:1.0) from (Rev. 8) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Feb  5 17:47:18 2021
+| Host         : DESKTOP-9AE4DJD running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Lab_1_adder_subtractor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of Lab_1_adder_subtractor_0_0 (xilinx.com:user:adder_subtractor:1.0 (Rev. 8)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Feb  5 17:46:44 2021
+| Host         : DESKTOP-9AE4DJD running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Lab_1_adder_subtractor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Lab_1_adder_subtractor_0_0 (xilinx.com:user:adder_subtractor:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Feb  5 17:28:00 2021
+| Host         : DESKTOP-9AE4DJD running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Lab_1_adder_subtractor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Lab_1_adder_subtractor_0_0 (xilinx.com:user:adder_subtractor:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Feb  1 23:05:22 2021
+| Host         : DESKTOP-9AE4DJD running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Lab_1_adder_subtractor_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Lab_1_adder_subtractor_0_0 (xilinx.com:user:adder_subtractor:1.0) from (Rev. 5) to (Rev. 6)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Lab_1_adder_subtractor_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'A' width 32 differs from original width 1
+
+-Upgraded port 'B' width 32 differs from original width 1
+
+-Upgraded port 'result' width 32 differs from original width 1
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Feb  1 23:05:05 2021
+| Host         : DESKTOP-9AE4DJD running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Lab_1_adder_subtractor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Lab_1_adder_subtractor_0_0 (xilinx.com:user:adder_subtractor:1.0) from (Rev. 4) to (Rev. 5)
+

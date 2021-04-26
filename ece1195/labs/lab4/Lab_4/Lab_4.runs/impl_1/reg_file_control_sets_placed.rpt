@@ -1,0 +1,97 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Apr  3 13:36:34 2021
+| Host         : DESKTOP-9AE4DJD running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file reg_file_control_sets_placed.rpt
+| Design       : reg_file
+| Device       : xc7z020
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    33 |
+| Unused register locations in slices containing registers |     0 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|    16+ |           33 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              64 |           21 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1024 |          406 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------+---------------------------+------------------+----------------+
+|  Clock Signal  |       Enable Signal       |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++----------------+---------------------------+---------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | registers[23][31]_i_1_n_0 | registers[0][31]_i_1_n_0  |               15 |             32 |
+|  clk_IBUF_BUFG | registers[19][31]_i_1_n_0 | registers[0][31]_i_1_n_0  |               10 |             32 |
+|  clk_IBUF_BUFG | registers[1][31]_i_2_n_0  | registers[1][31]_i_1_n_0  |               14 |             32 |
+|  clk_IBUF_BUFG | p_0_in                    | registers[0][31]_i_1_n_0  |               11 |             32 |
+|  clk_IBUF_BUFG | registers[10][31]_i_2_n_0 | registers[10][31]_i_1_n_0 |               15 |             32 |
+|  clk_IBUF_BUFG | registers[12][31]_i_2_n_0 | registers[12][31]_i_1_n_0 |               10 |             32 |
+|  clk_IBUF_BUFG | registers[11][31]_i_2_n_0 | registers[11][31]_i_1_n_0 |               13 |             32 |
+|  clk_IBUF_BUFG | registers[14][31]_i_2_n_0 | registers[14][31]_i_1_n_0 |               11 |             32 |
+|  clk_IBUF_BUFG | registers[13][31]_i_2_n_0 | registers[13][31]_i_1_n_0 |               12 |             32 |
+|  clk_IBUF_BUFG | registers[16][31]_i_2_n_0 | registers[16][31]_i_1_n_0 |               10 |             32 |
+|  clk_IBUF_BUFG | registers[15][31]_i_1_n_0 | registers[0][31]_i_1_n_0  |               12 |             32 |
+|  clk_IBUF_BUFG | registers[17][31]_i_2_n_0 | registers[17][31]_i_1_n_0 |               10 |             32 |
+|  clk_IBUF_BUFG | registers[18][31]_i_2_n_0 | registers[18][31]_i_1_n_0 |               13 |             32 |
+|  clk_IBUF_BUFG | registers[20][31]_i_2_n_0 | registers[20][31]_i_1_n_0 |               12 |             32 |
+|  clk_IBUF_BUFG | registers[21][31]_i_1_n_0 | registers[0][31]_i_1_n_0  |               11 |             32 |
+|  clk_IBUF_BUFG | registers[22][31]_i_2_n_0 | registers[22][31]_i_1_n_0 |               13 |             32 |
+|  clk_IBUF_BUFG | registers[9][31]_i_2_n_0  | registers[9][31]_i_1_n_0  |               13 |             32 |
+|  clk_IBUF_BUFG | registers[25][31]_i_2_n_0 | registers[25][31]_i_1_n_0 |               12 |             32 |
+|  clk_IBUF_BUFG | registers[24][31]_i_2_n_0 | registers[24][31]_i_1_n_0 |               10 |             32 |
+|  clk_IBUF_BUFG | registers[26][31]_i_2_n_0 | registers[26][31]_i_1_n_0 |               16 |             32 |
+|  clk_IBUF_BUFG | registers[27][31]_i_1_n_0 | registers[0][31]_i_1_n_0  |               13 |             32 |
+|  clk_IBUF_BUFG | registers[28][31]_i_2_n_0 | registers[28][31]_i_1_n_0 |               14 |             32 |
+|  clk_IBUF_BUFG | registers[29][31]_i_1_n_0 | registers[0][31]_i_1_n_0  |               12 |             32 |
+|  clk_IBUF_BUFG | registers[2][31]_i_2_n_0  | registers[2][31]_i_1_n_0  |               12 |             32 |
+|  clk_IBUF_BUFG | registers[30][31]_i_1_n_0 | registers[0][31]_i_1_n_0  |               16 |             32 |
+|  clk_IBUF_BUFG | registers[31][31]_i_1_n_0 | registers[0][31]_i_1_n_0  |               15 |             32 |
+|  clk_IBUF_BUFG | registers[3][31]_i_1_n_0  | registers[0][31]_i_1_n_0  |               12 |             32 |
+|  clk_IBUF_BUFG | registers[4][31]_i_2_n_0  | registers[4][31]_i_1_n_0  |               15 |             32 |
+|  clk_IBUF_BUFG | registers[5][31]_i_2_n_0  | registers[5][31]_i_1_n_0  |               13 |             32 |
+|  clk_IBUF_BUFG | registers[6][31]_i_2_n_0  | registers[6][31]_i_1_n_0  |               13 |             32 |
+|  clk_IBUF_BUFG | registers[7][31]_i_2_n_0  | registers[7][31]_i_1_n_0  |               16 |             32 |
+|  clk_IBUF_BUFG | registers[8][31]_i_2_n_0  | registers[8][31]_i_1_n_0  |               12 |             32 |
+|  clk_IBUF_BUFG |                           |                           |               21 |             64 |
++----------------+---------------------------+---------------------------+------------------+----------------+
+
+

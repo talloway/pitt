@@ -1,0 +1,17 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../adder.vhd" \
+"../../../../../adder_64.vhd" \
+"../../../../../shift_multiplicand.vhd" \
+"../../../../../shift_multiplier.vhd" \
+"../../../../../reg_1.vhd" \
+"../../../../../reg_32.vhd" \
+"../../../../../reg_64.vhd" \
+"../../../../../mult.vhd" \
+"../../../../../control.vhd" \
+"../../../../../adder_64_tb.vhd" \
+"../../../../../adder_tb.vhd" \
+"../../../../../mult_tb.vhd" \
+
+# Do not sort compile order
+nosort

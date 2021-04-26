@@ -1,0 +1,27 @@
+1 - My name is Avery Peiffer and I am joined by Clara Ferriera and Kristi Bushman. Our project focuses on the detection and tracking of Fast Moving Objects using both temporal and spatial information.
+
+2 - Though it seems somewhat self explanatory, an FMO is formally defined as an object that moves a distance greater than its diameter during a camera's exposure time.
+
+3 - FMOs are important for many object tracking applications, most recognizably in sports, where a ball can move faster than can be captured by a camera. They also have applications in robotics and self-driving cars, where it is necessary to process objects that can move quickly.
+
+4 - So, by their nature, FMOs have a few distinct properties. In an individual frame, their shape can appear distorted and their appearance can be inconsistent between frames. 
+
+5 - FMOs usually will appear as a single blurred streak in a frame, and can be very difficult to track visually, much less by a computer.
+
+6 - Therefore, they present a lot of difficulties when trying to track them in the aforementioned applications.
+
+7 - So, at a high level, what we are trying to do is track FMOs by using segmentation methods. We want to evaluate our method on the FMOv2 dataset, which is a folder of 20 videos of FMOs in different contexts. We want to compare these results to those presented in prior work.
+
+8 - There are two main categories in the prior work: Tracking FMOs and Trajectory Estimation of FMOs.
+
+9 - This first paper, called Tracking FMOs, created the FMOv2 dataset and created three algorithms for tracking and detection. It does use information from the surrounding frames to detect the FMO but is not a learning based method.
+
+10 - The second notable paper created a synthetic dataset for FMOs and created a deep learning model using the ENet architecture. However, the authors created two separate models, one for large objects and one for small objects, so it is not very robust. The model also does not achieve very fast performance.
+
+11 - The third paper estimates the trajectory of an FMO by locating the object and then fitting a smooth curve to estimate its path. This paper does look at the entire video to predict the trajectory, which isn't what we will end up doing, where we look at only a few frames.
+
+12 - So, as an exercise, we can try to find the FMO from a single frame of this video. We can see what looks like a shadow here, but we have no idea where the object is in the surrounding area.
+
+13 - This is one of the main difficulties of tracking FMOs: they are difficult to detect in a one-off manner. Instead, let's try to look at the frames leading up to the previous one to get a better estimate of the FMO's location.
+
+14-16 - So looking at these two frames, you can tell where the object is supposed to be in the current frame. Even though you can't technically see it, your human intuition for visual object tracking places it right around the area above this doorhinge. Clara is now going to talk about our specific approach for detecting FMOs in this manner. 

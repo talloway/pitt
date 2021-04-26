@@ -1,0 +1,36 @@
+# Avery Peiffer
+# ECE 1195 
+# Lab 4 Extra Credit
+
+# This is in the MIPS assembly format that I'm used to from COE 0147
+# Assume dividend is in $r1 and divisor is in $r2
+# I.e. for 21 / 5, 21 is in $r1 and 5 is in $r2
+
+# Initialize count to 0
+addi $r3, $r3, 0
+
+subtraction:
+    # Perform repeated subtraction and increment the count
+    sub $r1, $r1, $r2
+    addi $r3, $r3, 1
+
+    # Subtract the divisor from the result so it can be compared to see if it is < 0
+    sub $r4, $r1, $r2
+    bltzal $r4, end
+    j subtraction
+
+
+# Reaching this point means $r1, which contains the result of repeated subtraction, is 
+# less than the divisor, meaning division has ended.
+# $r3 contains the quotient, while $r1 contains the remainder.
+end:
+    # Clear out values in special registers HI and LO
+    addi $HI, $HI, 0
+    addi $LO, $LO, 0
+
+    # Move quotient and remainder to HI and LO
+    add $HI, $HI, $r3
+    add $LO, $LO, $r1
+    
+    exit
+    

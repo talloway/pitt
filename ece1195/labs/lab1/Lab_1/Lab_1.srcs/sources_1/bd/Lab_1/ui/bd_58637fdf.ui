@@ -1,0 +1,34 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y -250 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y -190 -defaultsOSRD
+preplace portBus BTN -pg 1 -y -270 -defaultsOSRD
+preplace portBus LED -pg 1 -y -220 -defaultsOSRD
+preplace inst axi_regmap_0 -pg 1 -lvl 1 -y -290 -defaultsOSRD
+preplace inst adder_subtractor_0 -pg 1 -lvl 1 -y -520 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -y -330 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 2 -y -40 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y -30 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 3 420J -150 820 -210 1110
+preplace netloc axi_regmap_0_REG3_OUT 1 1 3 420J -160 NJ -160 1120J
+preplace netloc adder_subtractor_0_result 1 0 2 10 -600 410
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 2 410J -180 790
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 3 30 90 NJ 90 810
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 450
+preplace netloc REG3_IN_0_1 1 0 1 N
+preplace netloc axi_regmap_0_REG1_OUT 1 0 2 0 -650 450
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 430J -140 N -140 1130
+preplace netloc axi_regmap_0_REG2_OUT 1 0 2 20 -610 440
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 80 440 -170 800
+preplace netloc ps7_0_axi_periph_M00_AXI 1 0 4 -10 -640 NJ -640 NJ -640 1110
+preplace netloc axi_regmap_0_REG0_OUT 1 0 2 30 -620 420
+preplace netloc adder_subtractor_0_overflow 1 0 2 -20 -630 430
+levelinfo -pg 1 -40 220 620 970 1150 -top -750 -bot 200
+"
+}
+{
+   "da_axi4_cnt":"2",
+   "da_ps7_cnt":"2"
+}

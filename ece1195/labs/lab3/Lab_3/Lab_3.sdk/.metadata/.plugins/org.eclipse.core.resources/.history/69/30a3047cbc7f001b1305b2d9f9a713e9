@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	uint32_t *regmap = (uint32_t *) 0x70000000;
+
+	uint32_t num1 = 0x00000007;
+	uint32_t num2 = 0x00000008;
+
+	regmap[0] = num1;
+	regmap[1] = num2;
+	regmap[2] = 0;
+
+	printf("values in variable: \n");
+	printf("%zu\t", num1);
+	printf("%zu\t", num2);
+	printf("%d\n", 0);
+
+	printf("values in regmap: \n");
+	printf("%zu\t", regmap[0]);
+	printf("%zu\t", regmap[1]);
+	printf("%d\n", regmap[2]);
+	// printf("%zu\n", regmap[2]);
+
+	size_t p_high = regmap[0];
+	size_t p_low = regmap[1];
+	size_t p_done = regmap[2];
+
+	printf("values after calculation: \n");
+	printf("%zu\t", regmap[0]);
+	printf("%zu\t", regmap[1]);
+	printf("%d\n", regmap[2]);
+
+
+	return 0;
+}

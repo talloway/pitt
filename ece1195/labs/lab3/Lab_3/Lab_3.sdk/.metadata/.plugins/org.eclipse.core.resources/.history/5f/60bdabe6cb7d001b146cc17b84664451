@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	uint32_t *regmap = (uint32_t *) 0x70000000;
+
+	uint32_t num1 = 5;
+	uint32_t num2 = 8;
+
+	regmap[0] = num1;
+	regmap[1] = num2;
+	// regmap[2] = 1;
+
+	printf("values: \n");
+	printf("%zu\t", regmap[0]);
+	printf("%zu\n", regmap[1]);
+
+	regmap[2] = 0;
+
+	size_t p = regmap[0];
+	size_t d = regmap[1];
+
+	// printf("Test 1: %s\n", (p == num1 * num2) && (d == 1) ? "CORRECT" : "ERROR");
+
+	return 0;
+}

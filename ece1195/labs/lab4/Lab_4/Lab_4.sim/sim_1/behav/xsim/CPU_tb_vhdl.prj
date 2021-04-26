@@ -1,0 +1,28 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../ALU.vhd" \
+"../../../../../Arith_Unit.vhd" \
+"../../../../../CPU.vhd" \
+"../../../../../CPU_memory.vhd" \
+"../../../../../FSM.vhd" \
+"../../../../../adder.vhd" \
+"../../../../../adder_64.vhd" \
+"../../../../Lab_4.srcs/sources_1/new/clo_unit.vhd" \
+"../../../../../comparator_unit.vhd" \
+"../../../../../control.vhd" \
+"../../../../../logical_unit.vhd" \
+"../../../../../mult.vhd" \
+"../../../../../reg.vhd" \
+"../../../../../reg_1.vhd" \
+"../../../../../reg_32.vhd" \
+"../../../../../reg_64.vhd" \
+"../../../../../reg_file.vhd" \
+"../../../../../shift_multiplicand.vhd" \
+"../../../../../shift_multiplier.vhd" \
+"../../../../../shift_unit.vhd" \
+"../../../../../sign_extend.vhd" \
+"../../../../../top_level.vhd" \
+"../../../../../CPU_tb.vhd" \
+
+# Do not sort compile order
+nosort

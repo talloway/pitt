@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Feb  9 22:54:04 2021
+# Process ID: 15196
+# Current directory: c:/ece1195/labs/lab1/lab_1/lab_1.tmp/adder_subtractor_v1_0_project/adder_subtractor_v1_0_project.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source c:/ece1195/labs/lab1/lab_1/lab_1.tmp/adder_subtractor_v1_0_project/adder_subtractor_v1_0_project.sim/sim_1/behav/xsim/xsim.dir/adder_subtractor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: c:/ece1195/labs/lab1/lab_1/lab_1.tmp/adder_subtractor_v1_0_project/adder_subtractor_v1_0_project.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: c:/ece1195/labs/lab1/lab_1/lab_1.tmp/adder_subtractor_v1_0_project/adder_subtractor_v1_0_project.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source c:/ece1195/labs/lab1/lab_1/lab_1.tmp/adder_subtractor_v1_0_project/adder_subtractor_v1_0_project.sim/sim_1/behav/xsim/xsim.dir/adder_subtractor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Feb  9 22:54:05 2021...

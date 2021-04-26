@@ -1,0 +1,14 @@
+9
+0 1 optical 10000 60
+0 2 optical 10000 40
+0 6 optical 10000 80
+2 5 optical 10000 20
+3 5 optical 10000 30
+8 5 optical 10000 50
+6 5 optical 10000 20
+6 8 optical 10000 40
+7 3 optical 10000 1000
+1 7 optical 10000 95
+1 4 optical 10000 50
+4 6 optical 10000 40
+6 7 optical 10000 70

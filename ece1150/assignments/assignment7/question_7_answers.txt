@@ -1,0 +1,4 @@
+7b - UDP
+7c - Destination port number for query = 53
+     Source port number for response = 53
+7d - IP address is 136.142.34.104

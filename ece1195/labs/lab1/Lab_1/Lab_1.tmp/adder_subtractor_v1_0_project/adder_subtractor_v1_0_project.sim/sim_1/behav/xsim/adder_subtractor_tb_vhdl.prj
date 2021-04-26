@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlbib  \
+"../../../../../../../adder_subtractor_1.0/src/full_adder_0_1/hdl/full_adder_v1_0.vhd" \
+"../../../../../../../adder_subtractor_1.0/src/full_adder_0_1/sim/full_adder_0.vhd" \
+"../../../../../../../adder_subtractor_1.0/hdl/adder_subtractor_v1_0.vhd" \
+"../../../../../../../adder_subtractor_1.0/adder_subtractor_tb.vhd" \
+
+# Do not sort compile order
+nosort

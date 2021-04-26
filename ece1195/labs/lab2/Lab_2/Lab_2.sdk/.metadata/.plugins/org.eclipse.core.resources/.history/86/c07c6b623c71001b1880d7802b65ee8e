@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void) {
+	uint32_t *regmap = (uint32_t *) 0x70000000;
+
+	// Bitwise AND
+	regmap[0] = 0x00000001;
+	regmap[1] = 0x00000002;
+	regmap[2] = 0;
+	regmap[3] = 0;
+	uint32_t r = regmap[0];
+	printf("Bitwise AND: %s", (r == 0x00000000 ? "COR" : "ERR"));
+
+	return 0;
+}

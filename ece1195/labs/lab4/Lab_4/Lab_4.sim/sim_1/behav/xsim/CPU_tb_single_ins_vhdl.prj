@@ -1,0 +1,18 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../ALU.vhd" \
+"../../../../../ALU_control.vhd" \
+"../../../../../Arith_Unit.vhd" \
+"../../../../../CPU.vhd" \
+"../../../../../FSM.vhd" \
+"../../../../../comparator_unit.vhd" \
+"../../../../../logical_unit.vhd" \
+"../../../../../reg.vhd" \
+"../../../../../reg_1.vhd" \
+"../../../../../reg_file.vhd" \
+"../../../../../shift_unit.vhd" \
+"../../../../../sign_extend.vhd" \
+"../../../../../CPU_tb_single_ins.vhd" \
+
+# Do not sort compile order
+nosort

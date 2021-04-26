@@ -1,0 +1,81 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Feb 16 19:50:00 2021
+| Host         : DESKTOP-9AE4DJD running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Lab_2_ALU_0_2'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Lab_2_ALU_0_2 (xilinx.com:user:ALU:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Lab_2_ALU_0_2'. These changes may impact your design.
+
+
+-Upgrade has removed port 's00_axi_aclk'
+
+-Upgrade has removed port 's00_axi_araddr'
+
+-Upgrade has removed port 's00_axi_aresetn'
+
+-Upgrade has removed port 's00_axi_arprot'
+
+-Upgrade has removed port 's00_axi_arready'
+
+-Upgrade has removed port 's00_axi_arvalid'
+
+-Upgrade has removed port 's00_axi_awaddr'
+
+-Upgrade has removed port 's00_axi_awprot'
+
+-Upgrade has removed port 's00_axi_awready'
+
+-Upgrade has removed port 's00_axi_awvalid'
+
+-Upgrade has removed port 's00_axi_bready'
+
+-Upgrade has removed port 's00_axi_bresp'
+
+-Upgrade has removed port 's00_axi_bvalid'
+
+-Upgrade has removed port 's00_axi_rdata'
+
+-Upgrade has removed port 's00_axi_rready'
+
+-Upgrade has removed port 's00_axi_rresp'
+
+-Upgrade has removed port 's00_axi_rvalid'
+
+-Upgrade has removed port 's00_axi_wdata'
+
+-Upgrade has removed port 's00_axi_wready'
+
+-Upgrade has removed port 's00_axi_wstrb'
+
+-Upgrade has removed port 's00_axi_wvalid'
+
+-Upgrade has added port 'A'
+
+-Upgrade has added port 'ALUOp'
+
+-Upgrade has added port 'B'
+
+-Upgrade has added port 'Overflow'
+
+-Upgrade has added port 'R'
+
+-Upgrade has added port 'SHAMT'
+
+-Upgrade has added port 'Zero'
+
+

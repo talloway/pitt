@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb 22 11:06:48 2021
+# Process ID: 24888
+# Current directory: c:/ece1195/labs/lab2/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source c:/ece1195/labs/lab2/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim/xsim.dir/ALU_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: c:/ece1195/labs/lab2/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: c:/ece1195/labs/lab2/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source c:/ece1195/labs/lab2/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim/xsim.dir/ALU_behav/webtalk/xsim_webtalk.tcl -notrace

@@ -1,0 +1,10 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Error: Multiplication failed.
+Time: 201 ns  Iteration: 4  Process: /top_level_tb/test  File: C:/ece1195/labs/lab3/top_level_tb.vhd
+Error: Multiplication failed.
+Time: 621 ns  Iteration: 4  Process: /top_level_tb/test  File: C:/ece1195/labs/lab3/top_level_tb.vhd
+Error: Multiplication failed.
+Time: 767 ns  Iteration: 4  Process: /top_level_tb/test  File: C:/ece1195/labs/lab3/top_level_tb.vhd
+Error: Multiplication failed.
+Time: 977 ns  Iteration: 4  Process: /top_level_tb/test  File: C:/ece1195/labs/lab3/top_level_tb.vhd

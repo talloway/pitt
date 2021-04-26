@@ -1,0 +1,16 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/ece1195/labs/lab3_2/adder.vhd,1614378086,vhdl,,,,adder,,,,,,,,
+C:/ece1195/labs/lab3_2/adder_64.vhd,1614725492,vhdl,,,,adder_64,,,,,,,,
+C:/ece1195/labs/lab3_2/control.vhd,1615820429,vhdl,,,,control,,,,,,,,
+C:/ece1195/labs/lab3_2/lab3_2.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,axi_vip_v1_1_4;processing_system7_vip_v1_0_6;xilinx_vip,,,,,,
+C:/ece1195/labs/lab3_2/mult.vhd,1615228104,vhdl,,,,mult,,,,,,,,
+C:/ece1195/labs/lab3_2/reg_1.vhd,1614728766,vhdl,,,,reg_1,,,,,,,,
+C:/ece1195/labs/lab3_2/reg_32.vhd,1614710921,vhdl,,,,reg_32,,,,,,,,
+C:/ece1195/labs/lab3_2/reg_64.vhd,1614813484,vhdl,,,,reg_64,,,,,,,,
+C:/ece1195/labs/lab3_2/shift_multiplicand.vhd,1614813614,vhdl,,,,shift_multiplicand,,,,,,,,
+C:/ece1195/labs/lab3_2/shift_multiplier.vhd,1614814621,vhdl,,,,shift_multiplier,,,,,,,,
+C:/ece1195/labs/lab3_2/top_level.vhd,1615819835,vhdl,,,,top_level,,,,,,,,
+C:/ece1195/labs/lab3_2/top_level_tb.vhd,1615761193,vhdl,,,,top_level_tb,,,,,,,,

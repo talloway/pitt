@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+c:/ece1195/labs/lab2/lab_2/ALU_1.0/hdl/ALU_v1_0.vhd,1613515702,vhdl,,,,alu,,,,,,,,
+c:/ece1195/labs/lab2/lab_2/ALU_1.0/src/Arith_Unit.vhd,1613516667,vhdl,,,,arith_unit,,,,,,,,
+c:/ece1195/labs/lab2/lab_2/ALU_1.0/src/comparator_unit.vhd,1613516373,vhdl,,,,comparator_unit,,,,,,,,
+c:/ece1195/labs/lab2/lab_2/ALU_1.0/src/logical_unit.vhd,1613516329,vhdl,,,,logical_unit,,,,,,,,
+c:/ece1195/labs/lab2/lab_2/ALU_1.0/src/shift_unit.vhd,1613516414,vhdl,,,,shift_unit,,,,,,,,

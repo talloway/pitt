@@ -1,0 +1,39 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f32461d70974441a928f8f971e5f6451 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture flipflop of entity xil_defaultlib.reg_1 [reg_1_default]
+Compiling architecture arc of entity xil_defaultlib.reg [reg_default]
+Compiling architecture arc of entity xil_defaultlib.reg_file [reg_file_default]
+Compiling architecture arc of entity xil_defaultlib.logical_unit [logical_unit_default]
+Compiling architecture struct of entity xil_defaultlib.arith_unit [arith_unit_default]
+Compiling architecture arc of entity xil_defaultlib.comparator_unit [comparator_unit_default]
+Compiling architecture arc of entity xil_defaultlib.shift_unit [shift_unit_default]
+Compiling architecture arc of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.sign_extend [sign_extend_default]
+Compiling architecture arc of entity xil_defaultlib.FSM [fsm_default]
+Compiling architecture arc of entity xil_defaultlib.reg_64 [reg_64_default]
+Compiling architecture one of entity xil_defaultlib.adder [adder_default]
+Compiling architecture arc of entity xil_defaultlib.adder_64 [adder_64_default]
+Compiling architecture arc of entity xil_defaultlib.shift_multiplicand [shift_multiplicand_default]
+Compiling architecture arc of entity xil_defaultlib.reg_32 [reg_32_default]
+Compiling architecture arc of entity xil_defaultlib.shift_multiplier [shift_multiplier_default]
+Compiling architecture arc of entity xil_defaultlib.control [control_default]
+Compiling architecture arc of entity xil_defaultlib.mult [mult_default]
+Compiling architecture arc of entity xil_defaultlib.top_level [top_level_default]
+Compiling architecture arc of entity xil_defaultlib.clo_unit [clo_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.CPU [cpu_default]
+Compiling architecture struct of entity xil_defaultlib.CPU_memory [cpu_memory_default]
+Compiling architecture sim of entity xil_defaultlib.cpu_tb
+Built simulation snapshot CPU_tb_behav

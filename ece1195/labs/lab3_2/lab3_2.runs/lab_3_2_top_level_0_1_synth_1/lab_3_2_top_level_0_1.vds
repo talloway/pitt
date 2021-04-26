@@ -1,0 +1,666 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 14 19:18:11 2021
+# Process ID: 10776
+# Current directory: C:/ece1195/labs/lab3_2/lab3_2.runs/lab_3_2_top_level_0_1_synth_1
+# Command line: vivado.exe -log lab_3_2_top_level_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab_3_2_top_level_0_1.tcl
+# Log file: C:/ece1195/labs/lab3_2/lab3_2.runs/lab_3_2_top_level_0_1_synth_1/lab_3_2_top_level_0_1.vds
+# Journal file: C:/ece1195/labs/lab3_2/lab3_2.runs/lab_3_2_top_level_0_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab_3_2_top_level_0_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ece1195/labs/lab1/Lab_1_repo/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top lab_3_2_top_level_0_1 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9136 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 469.426 ; gain = 104.719
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'lab_3_2_top_level_0_1' [c:/ece1195/labs/lab3_2/lab3_2.srcs/sources_1/bd/lab_3_2/ip/lab_3_2_top_level_0_1/synth/lab_3_2_top_level_0_1.vhd:67]
+INFO: [Synth 8-3491] module 'top_level' declared at 'C:/ece1195/labs/lab3_2/top_level.vhd:4' bound to instance 'U0' of component 'top_level' [c:/ece1195/labs/lab3_2/lab3_2.srcs/sources_1/bd/lab_3_2/ip/lab_3_2_top_level_0_1/synth/lab_3_2_top_level_0_1.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'top_level' [C:/ece1195/labs/lab3_2/top_level.vhd:13]
+INFO: [Synth 8-3491] module 'mult' declared at 'C:/ece1195/labs/lab3_2/mult.vhd:4' bound to instance 'mul' of component 'mult' [C:/ece1195/labs/lab3_2/top_level.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'mult' [C:/ece1195/labs/lab3_2/mult.vhd:14]
+INFO: [Synth 8-3491] module 'reg_64' declared at 'C:/ece1195/labs/lab3_2/reg_64.vhd:4' bound to instance 'reg' of component 'reg_64' [C:/ece1195/labs/lab3_2/mult.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'reg_64' [C:/ece1195/labs/lab3_2/reg_64.vhd:15]
+	Parameter Width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'reg_1' [C:/ece1195/labs/lab3_2/reg_1.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'reg_1' (1#1) [C:/ece1195/labs/lab3_2/reg_1.vhd:13]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-3491] module 'reg_1' declared at 'C:/ece1195/labs/lab3_2/reg_1.vhd:5' bound to instance 'regs' of component 'reg_1' [C:/ece1195/labs/lab3_2/reg_64.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'reg_64' (2#1) [C:/ece1195/labs/lab3_2/reg_64.vhd:15]
+INFO: [Synth 8-3491] module 'adder_64' declared at 'C:/ece1195/labs/lab3_2/adder_64.vhd:4' bound to instance 'adder' of component 'adder_64' [C:/ece1195/labs/lab3_2/mult.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'adder_64' [C:/ece1195/labs/lab3_2/adder_64.vhd:15]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'adder' [C:/ece1195/labs/lab3_2/adder.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'adder' (3#1) [C:/ece1195/labs/lab3_2/adder.vhd:15]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/ece1195/labs/lab3_2/adder.vhd:5' bound to instance 'adders' of component 'adder' [C:/ece1195/labs/lab3_2/adder_64.vhd:30]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'adder_64' (4#1) [C:/ece1195/labs/lab3_2/adder_64.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'shift_multiplicand' [C:/ece1195/labs/lab3_2/shift_multiplicand.vhd:19]
+	Parameter Width bound to: 64 - type: integer 
+WARNING: [Synth 8-614] signal 'multiplicand' is read in the process but is not in the sensitivity list [C:/ece1195/labs/lab3_2/shift_multiplicand.vhd:37]
+WARNING: [Synth 8-614] signal 'Q' is read in the process but is not in the sensitivity list [C:/ece1195/labs/lab3_2/shift_multiplicand.vhd:37]
+WARNING: [Synth 8-614] signal 'EN' is read in the process but is not in the sensitivity list [C:/ece1195/labs/lab3_2/shift_multiplicand.vhd:37]
+WARNING: [Synth 8-614] signal 'full_multiplicand' is read in the process but is not in the sensitivity list [C:/ece1195/labs/lab3_2/shift_multiplicand.vhd:37]
+WARNING: [Synth 8-614] signal 'shifted_Q' is read in the process but is not in the sensitivity list [C:/ece1195/labs/lab3_2/shift_multiplicand.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'shift_multiplicand' (5#1) [C:/ece1195/labs/lab3_2/shift_multiplicand.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'shift_multiplier' [C:/ece1195/labs/lab3_2/shift_multiplier.vhd:19]
+	Parameter Width bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'reg_32' [C:/ece1195/labs/lab3_2/reg_32.vhd:16]
+	Parameter Width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_32' (6#1) [C:/ece1195/labs/lab3_2/reg_32.vhd:16]
+WARNING: [Synth 8-614] signal 'Q' is read in the process but is not in the sensitivity list [C:/ece1195/labs/lab3_2/shift_multiplier.vhd:38]
+WARNING: [Synth 8-614] signal 'EN' is read in the process but is not in the sensitivity list [C:/ece1195/labs/lab3_2/shift_multiplier.vhd:38]
+WARNING: [Synth 8-614] signal 'multiplier' is read in the process but is not in the sensitivity list [C:/ece1195/labs/lab3_2/shift_multiplier.vhd:38]
+WARNING: [Synth 8-614] signal 'shifted_D' is read in the process but is not in the sensitivity list [C:/ece1195/labs/lab3_2/shift_multiplier.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'shift_multiplier' (7#1) [C:/ece1195/labs/lab3_2/shift_multiplier.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'control' [C:/ece1195/labs/lab3_2/control.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'control' (8#1) [C:/ece1195/labs/lab3_2/control.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'mult' (9#1) [C:/ece1195/labs/lab3_2/mult.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'top_level' (10#1) [C:/ece1195/labs/lab3_2/top_level.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'lab_3_2_top_level_0_1' (11#1) [c:/ece1195/labs/lab3_2/lab3_2.srcs/sources_1/bd/lab_3_2/ip/lab_3_2_top_level_0_1/synth/lab_3_2_top_level_0_1.vhd:67]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[31]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[30]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[29]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[28]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[27]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[26]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[25]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[24]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[23]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[22]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[21]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[20]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[19]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[18]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[17]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[16]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[15]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[14]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[13]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[12]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[11]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[10]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[9]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[8]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[7]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[6]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[5]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[4]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[3]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[2]
+WARNING: [Synth 8-3331] design control has unconnected port multiplier[1]
+WARNING: [Synth 8-3331] design mult has unconnected port start
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 525.938 ; gain = 161.230
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 525.938 ; gain = 161.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 525.938 ; gain = 161.230
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 874.160 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 874.160 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.156 . Memory (MB): peak = 877.125 ; gain = 2.965
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 877.125 ; gain = 512.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 877.125 ; gain = 512.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 877.125 ; gain = 512.418
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'D_reg' [C:/ece1195/labs/lab3_2/shift_multiplicand.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'D_reg' [C:/ece1195/labs/lab3_2/shift_multiplier.vhd:36]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                            00001 |                              000
+                      s1 |                            00010 |                              001
+                      s2 |                            00100 |                              010
+                      s3 |                            01000 |                              011
+                      s4 |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 877.125 ; gain = 512.418
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 64    
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 160   
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module reg_1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module shift_multiplicand 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module shift_multiplier 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 877.125 ; gain = 512.418
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:52 . Memory (MB): peak = 879.012 ; gain = 514.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:52 . Memory (MB): peak = 879.383 ; gain = 514.676
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:52 . Memory (MB): peak = 902.141 ; gain = 537.434
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:54 . Memory (MB): peak = 902.141 ; gain = 537.434
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:54 . Memory (MB): peak = 902.141 ; gain = 537.434
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:54 . Memory (MB): peak = 902.141 ; gain = 537.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:54 . Memory (MB): peak = 902.141 ; gain = 537.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:54 . Memory (MB): peak = 902.141 ; gain = 537.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:54 . Memory (MB): peak = 902.141 ; gain = 537.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    12|
+|2     |LUT1   |     1|
+|3     |LUT2   |    66|
+|4     |LUT3   |    98|
+|5     |LUT4   |     3|
+|6     |LUT5   |    60|
+|7     |LUT6   |     2|
+|8     |FDCE   |   160|
+|9     |FDRE   |    37|
+|10    |LD     |    96|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------+-------------------+------+
+|      |Instance                  |Module             |Cells |
++------+--------------------------+-------------------+------+
+|1     |top                       |                   |   535|
+|2     |  U0                      |top_level          |   535|
+|3     |    mul                   |mult               |   535|
+|4     |      c                   |control            |   122|
+|5     |      multiplicand_reg    |shift_multiplicand |   254|
+|6     |        sample_reg        |reg_64_95          |   190|
+|7     |          \L1[0].regs     |reg_1_96           |     3|
+|8     |          \L1[10].regs    |reg_1_97           |     4|
+|9     |          \L1[11].regs    |reg_1_98           |     3|
+|10    |          \L1[12].regs    |reg_1_99           |     4|
+|11    |          \L1[13].regs    |reg_1_100          |     3|
+|12    |          \L1[14].regs    |reg_1_101          |     4|
+|13    |          \L1[15].regs    |reg_1_102          |     3|
+|14    |          \L1[16].regs    |reg_1_103          |     4|
+|15    |          \L1[17].regs    |reg_1_104          |     3|
+|16    |          \L1[18].regs    |reg_1_105          |     4|
+|17    |          \L1[19].regs    |reg_1_106          |     3|
+|18    |          \L1[1].regs     |reg_1_107          |     3|
+|19    |          \L1[20].regs    |reg_1_108          |     4|
+|20    |          \L1[21].regs    |reg_1_109          |     3|
+|21    |          \L1[22].regs    |reg_1_110          |     4|
+|22    |          \L1[23].regs    |reg_1_111          |     3|
+|23    |          \L1[24].regs    |reg_1_112          |     4|
+|24    |          \L1[25].regs    |reg_1_113          |     3|
+|25    |          \L1[26].regs    |reg_1_114          |     4|
+|26    |          \L1[27].regs    |reg_1_115          |     3|
+|27    |          \L1[28].regs    |reg_1_116          |     4|
+|28    |          \L1[29].regs    |reg_1_117          |     3|
+|29    |          \L1[2].regs     |reg_1_118          |     4|
+|30    |          \L1[30].regs    |reg_1_119          |     4|
+|31    |          \L1[31].regs    |reg_1_120          |     2|
+|32    |          \L1[32].regs    |reg_1_121          |     3|
+|33    |          \L1[33].regs    |reg_1_122          |     2|
+|34    |          \L1[34].regs    |reg_1_123          |     3|
+|35    |          \L1[35].regs    |reg_1_124          |     2|
+|36    |          \L1[36].regs    |reg_1_125          |     3|
+|37    |          \L1[37].regs    |reg_1_126          |     2|
+|38    |          \L1[38].regs    |reg_1_127          |     3|
+|39    |          \L1[39].regs    |reg_1_128          |     2|
+|40    |          \L1[3].regs     |reg_1_129          |     3|
+|41    |          \L1[40].regs    |reg_1_130          |     3|
+|42    |          \L1[41].regs    |reg_1_131          |     2|
+|43    |          \L1[42].regs    |reg_1_132          |     3|
+|44    |          \L1[43].regs    |reg_1_133          |     2|
+|45    |          \L1[44].regs    |reg_1_134          |     3|
+|46    |          \L1[45].regs    |reg_1_135          |     2|
+|47    |          \L1[46].regs    |reg_1_136          |     3|
+|48    |          \L1[47].regs    |reg_1_137          |     2|
+|49    |          \L1[48].regs    |reg_1_138          |     3|
+|50    |          \L1[49].regs    |reg_1_139          |     2|
+|51    |          \L1[4].regs     |reg_1_140          |     4|
+|52    |          \L1[50].regs    |reg_1_141          |     3|
+|53    |          \L1[51].regs    |reg_1_142          |     2|
+|54    |          \L1[52].regs    |reg_1_143          |     3|
+|55    |          \L1[53].regs    |reg_1_144          |     2|
+|56    |          \L1[54].regs    |reg_1_145          |     3|
+|57    |          \L1[55].regs    |reg_1_146          |     2|
+|58    |          \L1[56].regs    |reg_1_147          |     3|
+|59    |          \L1[57].regs    |reg_1_148          |     2|
+|60    |          \L1[58].regs    |reg_1_149          |     3|
+|61    |          \L1[59].regs    |reg_1_150          |     2|
+|62    |          \L1[5].regs     |reg_1_151          |     3|
+|63    |          \L1[60].regs    |reg_1_152          |     3|
+|64    |          \L1[61].regs    |reg_1_153          |     3|
+|65    |          \L1[62].regs    |reg_1_154          |     2|
+|66    |          \L1[63].regs    |reg_1_155          |     2|
+|67    |          \L1[6].regs     |reg_1_156          |     4|
+|68    |          \L1[7].regs     |reg_1_157          |     3|
+|69    |          \L1[8].regs     |reg_1_158          |     4|
+|70    |          \L1[9].regs     |reg_1_159          |     3|
+|71    |      multiplier_reg      |shift_multiplier   |    95|
+|72    |        sample_reg        |reg_32             |    63|
+|73    |          \L1[0].regs_1   |reg_1_63           |     1|
+|74    |          \L1[10].regs_1  |reg_1_64           |     2|
+|75    |          \L1[11].regs_1  |reg_1_65           |     2|
+|76    |          \L1[12].regs_1  |reg_1_66           |     2|
+|77    |          \L1[13].regs_1  |reg_1_67           |     2|
+|78    |          \L1[14].regs_1  |reg_1_68           |     2|
+|79    |          \L1[15].regs_1  |reg_1_69           |     2|
+|80    |          \L1[16].regs_1  |reg_1_70           |     2|
+|81    |          \L1[17].regs_1  |reg_1_71           |     2|
+|82    |          \L1[18].regs_1  |reg_1_72           |     2|
+|83    |          \L1[19].regs_1  |reg_1_73           |     2|
+|84    |          \L1[1].regs_1   |reg_1_74           |     2|
+|85    |          \L1[20].regs_1  |reg_1_75           |     2|
+|86    |          \L1[21].regs_1  |reg_1_76           |     2|
+|87    |          \L1[22].regs_1  |reg_1_77           |     2|
+|88    |          \L1[23].regs_1  |reg_1_78           |     2|
+|89    |          \L1[24].regs_1  |reg_1_79           |     2|
+|90    |          \L1[25].regs_1  |reg_1_80           |     2|
+|91    |          \L1[26].regs_1  |reg_1_81           |     2|
+|92    |          \L1[27].regs_1  |reg_1_82           |     2|
+|93    |          \L1[28].regs_1  |reg_1_83           |     2|
+|94    |          \L1[29].regs_1  |reg_1_84           |     2|
+|95    |          \L1[2].regs_1   |reg_1_85           |     2|
+|96    |          \L1[30].regs_1  |reg_1_86           |     2|
+|97    |          \L1[31].regs_1  |reg_1_87           |     2|
+|98    |          \L1[3].regs_1   |reg_1_88           |     2|
+|99    |          \L1[4].regs_1   |reg_1_89           |     2|
+|100   |          \L1[5].regs_1   |reg_1_90           |     2|
+|101   |          \L1[6].regs_1   |reg_1_91           |     2|
+|102   |          \L1[7].regs_1   |reg_1_92           |     2|
+|103   |          \L1[8].regs_1   |reg_1_93           |     2|
+|104   |          \L1[9].regs_1   |reg_1_94           |     2|
+|105   |      \reg                |reg_64             |    64|
+|106   |        \L1[0].regs       |reg_1              |     1|
+|107   |        \L1[10].regs      |reg_1_0            |     1|
+|108   |        \L1[11].regs      |reg_1_1            |     1|
+|109   |        \L1[12].regs      |reg_1_2            |     1|
+|110   |        \L1[13].regs      |reg_1_3            |     1|
+|111   |        \L1[14].regs      |reg_1_4            |     1|
+|112   |        \L1[15].regs      |reg_1_5            |     1|
+|113   |        \L1[16].regs      |reg_1_6            |     1|
+|114   |        \L1[17].regs      |reg_1_7            |     1|
+|115   |        \L1[18].regs      |reg_1_8            |     1|
+|116   |        \L1[19].regs      |reg_1_9            |     1|
+|117   |        \L1[1].regs       |reg_1_10           |     1|
+|118   |        \L1[20].regs      |reg_1_11           |     1|
+|119   |        \L1[21].regs      |reg_1_12           |     1|
+|120   |        \L1[22].regs      |reg_1_13           |     1|
+|121   |        \L1[23].regs      |reg_1_14           |     1|
+|122   |        \L1[24].regs      |reg_1_15           |     1|
+|123   |        \L1[25].regs      |reg_1_16           |     1|
+|124   |        \L1[26].regs      |reg_1_17           |     1|
+|125   |        \L1[27].regs      |reg_1_18           |     1|
+|126   |        \L1[28].regs      |reg_1_19           |     1|
+|127   |        \L1[29].regs      |reg_1_20           |     1|
+|128   |        \L1[2].regs       |reg_1_21           |     1|
+|129   |        \L1[30].regs      |reg_1_22           |     1|
+|130   |        \L1[31].regs      |reg_1_23           |     1|
+|131   |        \L1[32].regs      |reg_1_24           |     1|
+|132   |        \L1[33].regs      |reg_1_25           |     1|
+|133   |        \L1[34].regs      |reg_1_26           |     1|
+|134   |        \L1[35].regs      |reg_1_27           |     1|
+|135   |        \L1[36].regs      |reg_1_28           |     1|
+|136   |        \L1[37].regs      |reg_1_29           |     1|
+|137   |        \L1[38].regs      |reg_1_30           |     1|
+|138   |        \L1[39].regs      |reg_1_31           |     1|
+|139   |        \L1[3].regs       |reg_1_32           |     1|
+|140   |        \L1[40].regs      |reg_1_33           |     1|
+|141   |        \L1[41].regs      |reg_1_34           |     1|
+|142   |        \L1[42].regs      |reg_1_35           |     1|
+|143   |        \L1[43].regs      |reg_1_36           |     1|
+|144   |        \L1[44].regs      |reg_1_37           |     1|
+|145   |        \L1[45].regs      |reg_1_38           |     1|
+|146   |        \L1[46].regs      |reg_1_39           |     1|
+|147   |        \L1[47].regs      |reg_1_40           |     1|
+|148   |        \L1[48].regs      |reg_1_41           |     1|
+|149   |        \L1[49].regs      |reg_1_42           |     1|
+|150   |        \L1[4].regs       |reg_1_43           |     1|
+|151   |        \L1[50].regs      |reg_1_44           |     1|
+|152   |        \L1[51].regs      |reg_1_45           |     1|
+|153   |        \L1[52].regs      |reg_1_46           |     1|
+|154   |        \L1[53].regs      |reg_1_47           |     1|
+|155   |        \L1[54].regs      |reg_1_48           |     1|
+|156   |        \L1[55].regs      |reg_1_49           |     1|
+|157   |        \L1[56].regs      |reg_1_50           |     1|
+|158   |        \L1[57].regs      |reg_1_51           |     1|
+|159   |        \L1[58].regs      |reg_1_52           |     1|
+|160   |        \L1[59].regs      |reg_1_53           |     1|
+|161   |        \L1[5].regs       |reg_1_54           |     1|
+|162   |        \L1[60].regs      |reg_1_55           |     1|
+|163   |        \L1[61].regs      |reg_1_56           |     1|
+|164   |        \L1[62].regs      |reg_1_57           |     1|
+|165   |        \L1[63].regs      |reg_1_58           |     1|
+|166   |        \L1[6].regs       |reg_1_59           |     1|
+|167   |        \L1[7].regs       |reg_1_60           |     1|
+|168   |        \L1[8].regs       |reg_1_61           |     1|
+|169   |        \L1[9].regs       |reg_1_62           |     1|
++------+--------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:54 . Memory (MB): peak = 902.141 ; gain = 537.434
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 902.141 ; gain = 186.246
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:54 . Memory (MB): peak = 902.141 ; gain = 537.434
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 108 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 908.148 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 96 instances were transformed.
+  LD => LDCE: 96 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+141 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:58 . Memory (MB): peak = 908.148 ; gain = 556.734
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 908.148 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/ece1195/labs/lab3_2/lab3_2.runs/lab_3_2_top_level_0_1_synth_1/lab_3_2_top_level_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 168 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 908.148 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/ece1195/labs/lab3_2/lab3_2.runs/lab_3_2_top_level_0_1_synth_1/lab_3_2_top_level_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lab_3_2_top_level_0_1_utilization_synth.rpt -pb lab_3_2_top_level_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 14 19:19:23 2021...

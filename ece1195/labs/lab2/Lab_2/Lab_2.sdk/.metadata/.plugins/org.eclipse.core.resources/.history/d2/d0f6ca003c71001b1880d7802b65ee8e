@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main(void) {
+	uint32_t *regmap = (uint32_t *) 0x70000000;
+
+	return 0;
+}

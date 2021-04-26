@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int main(void) {
+	uint32_t *regmap = (uint32_t *) 0x70000000;
+
+	// Bitwise AND
+	regmap[0] = 0x00000001;
+	regmap[1] = 0x00000002;
+	regmap[2] = 0;
+	regmap[3] = 0;
+	uint32_t r = regmap[0];
+	printf("Bitwise AND: %s\n", (r == (0x00000001 & 0x00000002) ? "COR" : "ERR"));
+
+	// Bitwise OR
+	regmap[0] = 0x00000001;
+	regmap[1] = 0x00000002;
+	regmap[2] = 0;
+	regmap[3] = 1;
+	r = regmap[0];
+	printf("Bitwise OR: %s\n", (r == (0x00000001 | 0x00000002) ? "COR" : "ERR"));
+
+	// Bitwise XOR
+	regmap[0] = 0x00000001;
+	regmap[1] = 0x00000002;
+	regmap[2] = 0;
+	regmap[3] = 2;
+	r = regmap[0];
+	printf("Bitwise XOR: %s\n", (r == 0x00000003 ? "COR" : "ERR"));
+
+	// Bitwise NOR
+	regmap[0] = 0x00000001;
+	regmap[1] = 0x00000002;
+	regmap[2] = 0;
+	regmap[3] = 3;
+	r = regmap[0];
+	printf("Bitwise NOR: %s\n", (r == 0xFFFFFFFC ? "COR" : "ERR"));
+
+	// Signed addition
+	regmap[0] = 0xFDCDBACD;
+	regmap[1] = 0xF0000000;
+	regmap[2] = 0;
+	regmap[3] = 4;
+	r = regmap[0];
+	printf("Signed addition: %s\n", (r = 0xEDCDBACD ? "COR" : "ERR"));
+
+	return 0;
+}

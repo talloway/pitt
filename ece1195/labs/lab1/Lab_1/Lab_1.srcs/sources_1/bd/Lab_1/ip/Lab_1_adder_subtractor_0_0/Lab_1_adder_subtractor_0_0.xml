@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>Lab_1_adder_subtractor_0_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsynthesis</spirit:name>
+        <spirit:displayName>VHDL Synthesis</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>adder_subtractor</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Feb 08 17:25:53 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:1e2dcc83</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsynthesiswrapper</spirit:name>
+        <spirit:displayName>VHDL Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>Lab_1_adder_subtractor_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Feb 08 17:25:53 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:1e2dcc83</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlbehavioralsimulation</spirit:name>
+        <spirit:displayName>VHDL Simulation</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>adder_subtractor</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Feb 08 17:25:53 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:56240cf4</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsimulationwrapper</spirit:name>
+        <spirit:displayName>VHDL Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>Lab_1_adder_subtractor_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Feb 08 17:25:53 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:56240cf4</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_externalfiles</spirit:name>
+        <spirit:displayName>External Files</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Feb 08 17:27:22 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:1e2dcc83</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>A</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>B</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>k</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>result</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>overflow</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>WIDTH</spirit:name>
+        <spirit:displayName>Width</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.WIDTH" spirit:minimum="0" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/full_adder_0_1/full_adder_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/1f6d/hdl/adder_subtractor_v1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/Lab_1_adder_subtractor_0_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/full_adder_0_1/full_adder_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/1f6d/hdl/adder_subtractor_v1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/Lab_1_adder_subtractor_0_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>Lab_1_adder_subtractor_0_0.dcp</spirit:name>
+        <spirit:userFileType>dcp</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>Lab_1_adder_subtractor_0_0_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>Lab_1_adder_subtractor_0_0_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>Lab_1_adder_subtractor_0_0_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>Lab_1_adder_subtractor_0_0_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>32-bit adder/subtractor</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_BASEADDR</spirit:name>
+      <spirit:displayName>C S00 AXI BASEADDR</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_BASEADDR" spirit:order="5" spirit:bitStringLength="32">0xFFFFFFFF</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_BASEADDR">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_HIGHADDR</spirit:name>
+      <spirit:displayName>C S00 AXI HIGHADDR</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_HIGHADDR" spirit:order="6" spirit:bitStringLength="32">0x00000000</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_HIGHADDR">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">Lab_1_adder_subtractor_0_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>WIDTH</spirit:name>
+      <spirit:displayName>Width</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.WIDTH">32</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>adder_subtractor_v1.0</xilinx:displayName>
+      <xilinx:coreRevision>11</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64b86b87_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@183e321f_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35417551_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34fc1fa9_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d1de18e_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@534ae520_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68bc9329_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47584bf5_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10747dd0_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48d70b42_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ac6a0c5_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@703ea232_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e3cc703_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64961af8_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@541c9ac1_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13b5af14_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e9f8a9a_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d435a17_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25781cc5_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69299e88_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@130d63a7_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4faff54f_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5768898b_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@278c636b_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51985813_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@597832d4_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fc36aec_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b167c49_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@baf39d5_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d375492_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bdfccc4_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c7abd0c_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bb5fe26_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27850a1e_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b73ec7d_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29653835_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@682d3f2d_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d7b8213_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@790916f3_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c7a59fd_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d403e1c_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e5eb5e_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fd1f9e_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4554ac3a_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28e724b2_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3750d9a6_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@586b97b1_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@707bcefd_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c56a33b_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a807bc3_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ebbd08e_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72c66663_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56aeb807_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ba3b9c6_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48dae2b5_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@191105f0_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c345350_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ac4b08e_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18392fef_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a10f524_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50ad67a5_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cf43427_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78ac6cc6_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@183af125_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fd9e51d_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7602302_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@539b8fff_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77bbac0a_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5dad1c60_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@595048c9_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@598778c_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d2e43e4_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78b4b0c4_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e522705_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fd1e395_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6dcb5d79_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cd7370d_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ace05d3_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b07ed77_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@647db1fe_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7af6512c_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42f049b_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@362bbf2f_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c703767_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b7d5dad_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@268aa86_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3788837b_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3674a821_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@355dc3d9_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d899ec2_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d618599_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14837a8f_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7053e4e1_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16c1fac1_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a9e82fb_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51a416e5_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76046c34_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20e7e6d9_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76b35e49_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a50d8e0_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52f22b18_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@553aa8e6_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ea5e3be_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11414f4c_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35e1277_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f31b2b0_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@192e7667_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@258f2704_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32552216_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8e54267_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@631cfddf_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f27b8e7_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3038b280_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10dec5ac_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c097200_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41e6647d_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11b2704a_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14176b1f_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3576b53e_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ff23057_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32445a01_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f066c36_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43a44a75_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c11f5b7_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b9189f5_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17cee48a_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1adea748_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59141b1b_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e8d38b0_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2623392f_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e9092e6_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27e1c8c9_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66e2fe03_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ff9f446_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c61b16d_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ff80864_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62a43461_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@416639c2_ARCHIVE_LOCATION">c:/ece1195/labs/lab1/adder_subtractor_1.0</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="52a05b7c"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="ad0e819b"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="f5829d52"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="990ed665"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

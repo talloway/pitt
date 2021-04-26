@@ -1,0 +1,12 @@
+For which of the three representations is the within-between ratio smallest?
+	The within-between ratio is smallest for the texture_repr_concats representation.
+Does the answer to this question depend on the value of k that you use?
+	No - the bag of words representation can vary based on the value of k, but it does not change enough to affect the answer to the previous question.
+Does it depend on the number of keypoints you extract? (Try 500, 1000, 2000, 3000.)
+	No, it does not depend on the number of keypoints extracted.
+Which of the three types of descriptors that you used is the best one? How can you tell?
+	The texture_repr_concats descriptor is the best because its ratio is the smallest.
+Is this what you expected? Why or why not?
+	No, I would have expected the bag of words descriptor to be the best. However, it seems feasible that it is not the best.
+	The different animals seem to have differing texture patterns, but have some of the same features (eyes, ears, etc.) so
+	it makes sense that the bag of words descriptor is not actually the best for these images.

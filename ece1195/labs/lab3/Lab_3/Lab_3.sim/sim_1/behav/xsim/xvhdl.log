@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ece1195/labs/lab3/control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ece1195/labs/lab3/mult.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mult'

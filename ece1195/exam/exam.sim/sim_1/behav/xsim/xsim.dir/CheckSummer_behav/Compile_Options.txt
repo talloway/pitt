@@ -1,0 +1,1 @@
+-wto "a1f545bb1f0a4c199c1ff4844a57a957" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "CheckSummer_behav" "xil_defaultlib.CheckSummer" -log "elaborate.log" 

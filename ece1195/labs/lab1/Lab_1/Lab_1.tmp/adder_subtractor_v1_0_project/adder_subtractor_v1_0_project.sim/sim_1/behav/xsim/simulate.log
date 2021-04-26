@@ -1,0 +1,7 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ERROR: Integer overflow in ** operation
+Time: 320 ns  Iteration: 0  Process: /adder_subtractor_tb/line__42
+  File: c:/ece1195/labs/lab1/adder_subtractor_1.0/adder_subtractor_tb.vhd
+
+HDL Line: c:/ece1195/labs/lab1/adder_subtractor_1.0/adder_subtractor_tb.vhd:62

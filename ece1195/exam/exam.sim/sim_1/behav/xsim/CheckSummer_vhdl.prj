@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../add8.vhd" \
+"../../../../counter.vhd" \
+"../../../../datapath.vhd" \
+"../../../../fsm.vhd" \
+"../../../../reg8.vhd" \
+"../../../../CheckSummer.vhd" \
+
+# Do not sort compile order
+nosort
