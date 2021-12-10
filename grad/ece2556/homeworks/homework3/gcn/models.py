@@ -3,7 +3,7 @@ import torch.nn.functional as F
 
 from layers import GCNLayer
 
-class GCN(nn.module):
+class GCN(nn.Module):
     def __init__(self, nfeat, nhid, nclass, dropout):
         super(GCN, self).__init__()
 

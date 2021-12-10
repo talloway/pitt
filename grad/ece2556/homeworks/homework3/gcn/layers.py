@@ -1,7 +1,7 @@
 import math
 import torch
 
-from torch.nn.Parameter import Parameter
+from torch.nn.parameter import Parameter
 from torch.nn.modules.module import Module
 
 class GCNLayer(Module):
@@ -14,7 +14,7 @@ class GCNLayer(Module):
         self.weight = Parameter(torch.FloatTensor(input_features, output_features))
 
         if bias:
-            self.bias = Parameter(torch.FloatTensor(out_features))
+            self.bias = Parameter(torch.FloatTensor(output_features))
         else:
             self.register_parameter('bias', None)
 
@@ -25,7 +25,7 @@ class GCNLayer(Module):
         output = torch.spmm(adj, support)
 
         if self.bias is not None:
-            return output + bias
+            return output + self.bias
         else:
             return output
 
