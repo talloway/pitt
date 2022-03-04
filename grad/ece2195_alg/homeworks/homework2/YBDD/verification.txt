@@ -1,0 +1,118 @@
+boolean a7 b7 a6 b6 a5 b5 a4 b4 a3 b3 a2 b2 a1 b1 a0 b0
+# The above command define the variable order of BDD
+# a7-a0 is an 8-digit number, b7-b0 is another 8-digit number
+
+# Define a reference 8-bit adder (copied from tests/adders/addr8.src)
+# In this 8-bit adder, variable notation of t1, t2, t3, t4 is abused,
+# which is not suggested, but allowed.
+
+eval c0 a0 & b0
+
+eval t1 a1 & b1
+eval t2 a1 & c0
+eval t3 b1 & c0
+eval t4 t1 + t2
+eval c1 t4 + t3
+
+eval t1 a2 & b2
+eval t2 a2 & c1
+eval t3 b2 & c1
+eval t4 t1 + t2
+eval c2 t4 + t3
+
+eval t1 a3 & b3
+eval t2 a3 & c2
+eval t3 b3 & c2
+eval t4 t1 + t2
+eval c3 t4 + t3
+
+eval t1 a4 & b4
+eval t2 a4 & c3
+eval t3 b4 & c3
+eval t4 t1 + t2
+eval c4 t4 + t3
+
+eval t1 a5 & b5
+eval t2 a5 & c4
+eval t3 b5 & c4
+eval t4 t1 + t2
+eval c5 t4 + t3
+
+eval t1 a6 & b6
+eval t2 a6 & c5
+eval t3 b6 & c5
+eval t4 t1 + t2
+eval c6 t4 + t3
+
+eval t1 a7 ^ b7
+# obtain s7's true value
+eval s7_true t1 ^ c6
+
+# Your command starts here. Don't change above.
+# You should start declaring your 8-bit Ling adder below.
+###########################################################
+
+# Declare g: gi = ai & bi
+eval g7 a7 & b7
+eval g6 a6 & b6
+eval g5 a5 & b5
+eval g4 a4 & b4
+eval g3 a3 & b3
+eval g2 a2 & b2
+eval g1 a1 & b1
+eval g0 a0 & b0
+
+# Declare p: pi = ai + bi
+eval p7 a7 + b7
+eval p6 a6 + b6
+eval p5 a5 + b5
+eval p4 a4 + b4
+eval p3 a3 + b3
+eval p2 a2 + b2
+eval p1 a1 + b1
+eval p0 a0 + b0
+
+# Find p63 = p6 & p5 & p4 & p3
+eval t1 p6 & p5
+eval t2 t1 & p4
+eval p63 t2 & p3
+
+# Find H1 = g7 + g6 + (p6 & g5) + (ps & p5 & g4)
+eval t1 g7 + g6
+eval t2 p6 & g5
+eval t3 t1 + t2
+eval t4 p6 & p5
+eval t5 t4 & g4
+eval H1 t3 + t5
+
+# Find H0 = g3 + g2 + (p2 & g1) + (p2 & p1 & g0)
+eval t1 g3 + g2
+eval t2 p2 & g1
+eval t3 t1 + t2
+eval t4 p2 & p1
+eval t5 t4 & g0
+eval H0 t3 + t5
+
+# Find h8 = H1 + (p63 & H0)
+eval t1 p63 & H0
+eval h8 H1 + t1
+
+# Find c7 = p7 & h8
+eval c7 p7 & h8
+
+# Find T7 = g7 ^ p7
+eval T7 g7 ^ p7
+
+# Find s7 = T7 ^ c7
+eval s7 T7 ^ c7
+
+# Use XOR function to verify that s7 == s7_true (should be 0 when they match)
+eval funct s7 ^ s7_true
+
+# Your command ends here. Don't change below.
+# You should design the variable called 'funct' above.
+###########################################################
+# This should print ZERO if they are equal
+bdd funct
+size funct
+quit
